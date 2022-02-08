@@ -1,0 +1,74 @@
+.layout-container{
+  display: grid;
+  grid-template-areas: "head head head head"
+  "side main main main"
+  "side main main main"
+  "side main main main";
+  /* "si foot foot foot"; */
+   height:100vh;
+   grid-template-columns: 20rem 1fr 1fr 1fr;
+   grid-template-rows: 4rem auto auto auto ;
+}
+
+.layout-container > * {
+  display: flex;
+}
+
+.layout-head{
+  grid-area: head;
+  display: flex;
+
+}
+
+.layout-side{
+  grid-area:side;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  padding: 2rem 5rem;
+  /* padding: 1rem 4rem; */
+  background-color: var(--palesilver-li);
+}
+
+.layout-main{
+  grid-area:main;
+}
+
+.layout-footer{
+  grid-area:foot;
+}
+
+.active{
+  background-color: var(--prim-x-light);
+}
+
+.list>li:hover{
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.list-inline{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.list-stacked{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 0.5rem;
+}
+
+.list-stacked>li{
+  padding:0.5rem;
+}
+
+
+.nav{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20rem;
+}
