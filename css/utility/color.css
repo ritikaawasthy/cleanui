@@ -1,0 +1,58 @@
+.prim{
+ background-color: var(--prim-col);
+ color: var(--sec-col);
+}
+
+.sec{
+ background-color: var(--sec-col);
+ color: var(--prim-col);
+}
+
+.prim-c{
+   color: var(--prim-col);
+}
+
+.prim-bg{
+  background-color: var(--prim-col);
+}
+
+.prim-li{
+  background-color: var(--prim-light);
+  color:  var(--prim-col);
+}
+
+.sec-c{
+   color: var(--sec-col);
+}
+
+.sec-bg{
+  background-color: var(--sec-col);
+}
+
+
+.red{
+  background-color: var(--red-light);
+  color: var(--red);
+
+}
+
+.yellow{
+  background-color: var(--yellow-light);
+  color: var(--yellow);
+  /* border: solid 4px var(--yellow); */
+}
+
+.green{
+  background-color: var(--green-light);
+  color: var(--green);
+  /* border: solid 4px var(--green); */
+}
+
+.blue{
+  background-color: var(--blue-li);
+  color: var(--blue);
+}
+
+.white-c{
+  color: white;
+}

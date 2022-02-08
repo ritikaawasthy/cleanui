@@ -1,0 +1,106 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;0,800;1,400;1,500;1,600;1,700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,600;1,700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+  /* font-family: font-family: 'Vollkorn', serif; */
+  /* font-family: 'Cinzel', serif; */
+  /* font-family: 'Cormorant', serif; */
+  /* font-family: 'IBM Plex Serif', serif; */
+  /* font-weight: 400; */
+
+
+:root{
+
+  --prim-col:#BFA7CC;
+  --sec-col: #FFE0E9;
+  --prim-light: rgb(191, 167, 204,0.5);
+  --prim-x-light: rgb(191, 167, 204,0.2);
+  --violetblue:#ADA7FF;
+  --sec-light: #FFEDFF;
+  --white: #FAFAFF;
+  --dark-purple: #39002E;
+  --red: #CB0E01;
+  --red-light: #FFB7BA;
+  --yellow: #FFB700;
+  --yellow-light: #FFF8B5;
+  --green: #60D394;
+  --green-light:#CBF9B3;
+  --base-col: #EDEDE9;
+  --blue: #42A5F5;
+  --blue-li: #BBDEFB;
+  --palesilver: #D6CCC2;
+  --palesilver-li: rgb(214, 204, 194,0.4);
+
+  margin: 0;
+  padding: 0;
+  top:0;
+  left:0;
+
+}
+
+html{
+  font-size:100%;
+  font-family: 'Cormorant Garamond', serif;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,p,header,nav,body{
+  margin: 0;
+  padding: 0;
+
+}
+
+img,
+video,
+iframe {
+  max-inline-size: 100%;
+  block-size: auto;
+  /* aspect-ratio: 2/1;
+  object-fit: contain;
+  object-position:center; */
+}
+
+ul,ol{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.container{
+  display: flex;
+  gap : 10px;
+  flex-flow:row wrap;
+}
+
+.container-col{
+  padding: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+  gap : 1rem;
+}
+
+.img-responsive{
+  width:100%;
+  height:auto;
+}
+
+.img-round{
+  border-radius: 50%;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+@media only screen and (max-width:300px){
+  html{font-size:50% }
+}
+/*
+@media only screen and (max-width:600px){
+  html{font-size:75% }
+} */
