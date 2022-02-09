@@ -1,18 +1,15 @@
 .layout-container{
   display: grid;
-  grid-template-areas: "head head head head"
-  "side main main main"
-  "side main main main"
-  "side main main main";
+  grid-template-areas: "head head "
+  "side main "
+  "side main "
+  "side main";
   /* "si foot foot foot"; */
    height:100vh;
-   grid-template-columns: 20rem 1fr 1fr 1fr;
+   grid-template-columns: 20rem 1fr ;
    grid-template-rows: 4rem auto auto auto ;
 }
 
-.layout-container > * {
-  display: flex;
-}
 
 .layout-head{
   grid-area: head;
@@ -32,6 +29,8 @@
 
 .layout-main{
   grid-area:main;
+  /* display:flex;
+  flex-flow: column wrap; */
 }
 
 .layout-footer{
