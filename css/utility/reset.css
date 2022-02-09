@@ -14,7 +14,7 @@
 
 :root{
 
-  --prim-col:rgb(191, 167, 204);
+  --prim-col:#D0BEDA;
   --prim-light: rgb(191, 167, 204,0.5);
   --prim-x-light: rgb(191, 167, 204,0.2);
   --sec-col: rgb(20, 20, 20);
