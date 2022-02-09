@@ -40,6 +40,8 @@
 
 .active{
   background-color: var(--prim-x-light);
+  box-shadow: 1px 1px 10px 2px var(--prim-x-light);
+
 }
 
 .list>li:hover{
