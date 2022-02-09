@@ -53,6 +53,11 @@
   color: var(--blue);
 }
 
+.palesilver-li{
+  background-color: var(--palesilver-li);
+  color: var(--sec);
+}
+
 .white-c{
   color: white;
 }
