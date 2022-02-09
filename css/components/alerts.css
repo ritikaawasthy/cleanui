@@ -10,18 +10,25 @@
   color: var(--prim-col);
   box-shadow: 1px 1px 3px 1px lightgrey;
   box-sizing: border-box;
+  font-size: 1.2rem;
 
 }
 .alert-close{
-  justify-content: space-between;
+  margin-left: auto;
 }
-.alert-close>span:hover{
+.alert-close:hover{
   cursor:pointer;
+  font-weight: bolder;
   opacity: 0.5;
 }
 
 .alert-bordered{
-
   border: solid 3px ;
   background-color: transparent;
+}
+
+.code-snippet{
+  max-height: 15rem;
+  overflow: scroll;
+  border-radius: 0.5rem;
 }

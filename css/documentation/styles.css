@@ -26,12 +26,13 @@
   flex-flow: column wrap;
   justify-content: flex-start;
   padding: 2rem 5rem;
-  /* padding: 1rem 4rem; */
   background-color: var(--palesilver-li);
+  /* box-shadow:  */
 }
 
 .layout-main{
   grid-area:main;
+  padding: 2rem;
 }
 
 .layout-footer{
