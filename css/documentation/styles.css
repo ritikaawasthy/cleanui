@@ -47,6 +47,13 @@
 .list>li:hover{
   font-weight: bolder;
   cursor: pointer;
+  background-color: var(--prim-x-light);
+  box-shadow: 1px 1px 10px 2px var(--prim-x-light);
+}
+
+nav>.list>li:hover{
+  box-shadow: 1px 1px 10px 2px var(--palesilver-li);
+  background-color: var(--palesilver-li);
 }
 
 .list-inline{
@@ -62,7 +69,7 @@
   gap: 0.5rem;
 }
 
-.list-stacked>li{
+ul>li{
   padding:0.5rem;
 }
 
