@@ -6,7 +6,7 @@
   "side main main main";
   /* "si foot foot foot"; */
    height:100vh;
-   grid-template-columns: 20rem 1fr 1fr 1fr;
+   grid-template-columns: 15rem 1fr 1fr 1fr;
    grid-template-rows: 4rem auto auto auto ;
 }
 
