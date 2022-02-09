@@ -26,9 +26,3 @@
   border: solid 3px ;
   background-color: transparent;
 }
-
-.code-snippet{
-  max-height: 15rem;
-  overflow: scroll;
-  border-radius: 0.5rem;
-}

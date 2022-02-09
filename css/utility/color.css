@@ -58,6 +58,10 @@
   color: var(--sec);
 }
 
+.palesilver-c{
+  color: var(--palesilver);
+}
+
 .white-c{
   color: white;
 }

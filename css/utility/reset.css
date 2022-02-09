@@ -100,6 +100,13 @@ button:hover{
   cursor: pointer;
 }
 
+.code-snippet{
+  max-height: 15rem;
+  overflow: scroll;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
 @media only screen and (max-width:300px){
   html{font-size:50% }
 }

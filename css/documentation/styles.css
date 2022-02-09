@@ -1,13 +1,13 @@
 .layout-container{
   display: grid;
-  grid-template-areas: "head head head head"
-  "side main main main"
-  "side main main main"
-  "side main main main";
-  /* "si foot foot foot"; */
+  grid-template-areas: "head head head"
+  "side main  main"
+  "side main  main"
+  "side main  main"
+  "foot foot foot";
    height:100vh;
-   grid-template-columns: 15rem 1fr 1fr 1fr;
-   grid-template-rows: 4rem auto auto auto ;
+   grid-template-columns: 20rem 1fr 1fr ;
+   grid-template-rows: 4rem auto auto  ;
 }
 
 .layout-container > * {
@@ -81,4 +81,10 @@ ul>li{
   align-items: center;
   justify-content: flex-start;
   padding-left: 20rem;
+}
+
+hr{
+  border: 1px solid;
+  width: 100%;
+  color: grey;
 }
