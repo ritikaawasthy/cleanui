@@ -1,0 +1,13 @@
+.input{
+  border:none;
+  border-bottom: 3px solid ;
+  padding: 0.5rem;
+}
+
+.input-label{
+ font-weight: 600;
+}
+
+.input:focus {
+    outline: none;
+}
