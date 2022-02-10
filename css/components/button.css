@@ -39,3 +39,8 @@
 .btn.btn-bordered.sec-c:hover{
   background-color: var(--prim-col);
 }
+
+.btn-float{
+  border-radius: 50%;
+  border: 2px solid ;
+}
