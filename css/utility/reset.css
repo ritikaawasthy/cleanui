@@ -78,6 +78,7 @@ ul,ol{
   display: flex;
   gap : 10px;
   flex-flow:row wrap;
+  padding: 1rem 0rem;
 }
 
 .container-col{
