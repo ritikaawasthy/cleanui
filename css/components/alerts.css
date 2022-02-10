@@ -32,3 +32,18 @@
   color: var(--red);
   background-color: var(--red-light);
 }
+
+.alert-warning{
+  color: var(--yellow);
+  background-color: var(--yellow-light);
+}
+
+.alert-success{
+  color: var(--green);
+  background-color: var(--green-light);
+}
+
+.alert-info{
+  color: var(--blue);
+  background-color: var(--blue-light);
+}
