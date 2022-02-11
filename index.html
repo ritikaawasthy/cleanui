@@ -1,116 +1,248 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Clean UI</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/documentation/styles.css">
-  </head>
-  <body >
-    <div class='layout-container'>
-   <header class='layout-head prim-li'>
-     <nav class="nav">
-       <ul class="list list-inline f-m sec-c">
-         <li class='active'>Home</li>
-         <li >Docs</li>
-       </ul>
-     </nav>
-   </header>
 
-   <section class="layout-side">
-    <ul class="list list-stacked f-m">
-      <li class='active'>Alert</li>
+<head>
+  <meta charset="utf-8">
+  <title>Clean UI</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/documentation/styles.css">
+</head>
+
+<body>
+  <div class='layout-container'>
+    <header class='layout-head prim-li'>
+      <nav class="nav">
+        <ul class="list list-inline f-m sec-c">
+          <li class='active'>Home</li>
+          <li>Docs</li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="layout-side">
+      <ul class="list list-stacked f-m">
+        <li class='active'>Alert</li>
         <li>Avatar</li>
-          <li>Badge</li>
-            <li>Button</li>
-               <li>Card</li>
-                <li>Modal</li>
-                 <li>Grid</li>
-                   <li>Utility</li>
-    </ul>
-   </section>
-   <section class="layout-main">
-     <div class="container-col">
+        <li>Badge</li>
+        <li>Button</li>
+        <li>Card</li>
+        <li>Modal</li>
+        <li>Grid</li>
+        <li>Utility</li>
+      </ul>
+    </section>
+    <section class="layout-main">
+      <div class="container-col">
 
-       <h2>ALERT</h2>
-       <p class='f-s'>Alert components using Tailwind CSS to speed up your project.</p>
-       <hr class="prim-c">
+        <h2>ALERT</h2>
+        <p class='f-s'>Alert components using Tailwind CSS to speed up your project.</p>
+        <hr class="prim-c">
 
-       <h3>1. Simple alert</h3>
-       <div class="alert prim">
-         <p>This is a primary Alert!</p>
-         <span class="alert-close">&#10540;</span>
-       </div>
+        <h3>1. Simple alert</h3>
+        <div class="alert prim">
+          <p>This is a primary Alert!</p>
+          <span class="alert-close">&#10540;</span>
+        </div>
 
-       <div class="alert sec">
-         <p>This is a secondary Alert!</p>
-         <span class="alert-close">&#10540;</span>
-       </div>
+        <div class="alert sec">
+          <p>This is a secondary Alert!</p>
+          <span class="alert-close">&#10540;</span>
+        </div>
 
-       <iframe class="code-snippet"
-  src="https://carbon.now.sh/embed?bg=rgba%28208%2C190%2C218%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=27px&dsblur=33px&wc=true&wa=true&pv=15px&ph=17px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=15px&lh=137%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522alert%2520prim%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520primary%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520sec%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520secondary%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-  style="width: 522px; height: 289px; border:0; transform: scale(1); overflow:hidden;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
-<hr class="prim-c">
+        <iframe class="code-snippet"
+          src="https://carbon.now.sh/embed?bg=rgba%28208%2C190%2C218%2C1%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=27px&dsblur=33px&wc=true&wa=true&pv=15px&ph=17px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=15px&lh=137%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522alert%2520prim%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520primary%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520sec%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520secondary%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+          style="width: 522px; height: 289px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <hr class="prim-c">
 
-       <h3>2. Alerts with icon</h3>
+        <h3>2. Alerts with icon</h3>
 
-       <div class="alert alert-danger">
-           <span >&#9888;</span>
-         <p>This is a red Alert!</p>
-         <span class="alert-close">&#10540;</span>
-       </div>
+        <div class="alert red">
+          <span>&#9888;</span>
+          <p>This is a red Alert!</p>
+          <span class="alert-close">&#10540;</span>
+        </div>
 
-       <div class="alert alert-warning">
-           <span >&#9888;</span>
-         <p>This is a yellow Alert!</p>
-         <span class="alert-close">&#10540;</span>
-       </div>
+        <div class="alert yellow">
+          <span>&#9888;</span>
+          <p>This is a yellow Alert!</p>
+          <span class="alert-close">&#10540;</span>
+        </div>
 
-       <div class="alert alert-success">
-           <span >&#9745;</span>
-         <p>This is a green Alert!</p>
-             <span class="alert-close">&#10540;</span>
-       </div>
+        <div class="alert green">
+          <span>&#9745;</span>
+          <p>This is a green Alert!</p>
+          <span class="alert-close">&#10540;</span>
+        </div>
 
-       <div class="alert alert-info">
-         <span >&#8505;</span>
-         <p>This is a primary Alert!</p>
-             <span class="alert-close">&#10540;</span>
-       </div>
+        <div class="alert blue">
+          <span>&#8505;</span>
+          <p>This is a primary Alert!</p>
+          <span class="alert-close">&#10540;</span>
+        </div>
 
-       <iframe class="code-snippet"
-  src="https://carbon.now.sh/embed?bg=rgba%28208%2C190%2C218%2C0.65%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=27px&dsblur=33px&wc=true&wa=true&pv=23px&ph=17px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=15px&lh=137%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522alert%2520red%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%253E%2526%25239888%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520red%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520yellow%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%253E%2526%25239888%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520yellow%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520green%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%253E%2526%25239745%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520green%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520blue%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%253E%2526%25238505%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520primary%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-  style="width: 558px; height: 593px; border:0; transform: scale(1); overflow:hidden;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
+        <iframe class="code-snippet"
+          src="https://carbon.now.sh/embed?bg=rgba%28208%2C190%2C218%2C0.65%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=27px&dsblur=33px&wc=true&wa=true&pv=23px&ph=17px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=15px&lh=137%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522alert%2520red%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%253E%2526%25239888%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520red%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520yellow%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%253E%2526%25239888%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520yellow%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520green%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%253E%2526%25239745%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520green%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520blue%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%253E%2526%25238505%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520primary%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+          style="width: 558px; height: 593px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+        </iframe>
 
-<hr class="prim-c">
+        <hr class="prim-c">
 
-      <h3>2. Alerts with border</h3>
+        <h3>2. Alerts with border</h3>
 
-       <div class="alert alert-bordered prim-c ">
-         <span >&#8505;</span>
-         <p>This is a bordered Alert!</p>
-             <span class="alert-close">&#10540;</span>
-       </div>
+        <div class="alert alert-bordered prim-c ">
+          <span>&#8505;</span>
+          <p>This is a bordered Alert!</p>
+          <span class="alert-close">&#10540;</span>
+        </div>
 
-       <div class="alert alert-bordered sec-c">
-         <span >&#8505;</span>
-         <p>This is a primary Alert!</p>
-             <span class="alert-close">&#10540;</span>
-       </div>
+        <div class="alert alert-bordered sec-c">
+          <span>&#8505;</span>
+          <p>This is a primary Alert!</p>
+          <span class="alert-close">&#10540;</span>
+        </div>
 
-       <iframe class="code-snippet"
+        <iframe class="code-snippet"
+          src="https://carbon.now.sh/embed?bg=rgba%28208%2C190%2C218%2C0.65%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=27px&dsblur=33px&wc=true&wa=true&pv=23px&ph=17px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=15px&lh=137%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-bordered%2520prim-c%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%253E%2526%25238505%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520bordered%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-bordered%2520sec-c%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%253E%2526%25238505%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520primary%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+          style="width: 558px; height: 346px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+      </div>
+
+        <div class="container-col">
+        <h2>AVATAR</h2>
+        <p>This is avatar component</p>
+        <hr class="prim-c">
+
+        <h3>1. Round Avatar</h3>
+        <div class="container">
+          <img class="avatar xs img-round" src="/css/media/avatar-cat.png">
+          <img class="avatar s img-round" src="/css/media/avatar-cat.png">
+          <img class="avatar m img-round" src="/css/media/avatar-cat.png">
+          <img class="avatar l img-round" src="/css/media/avatar-cat.png">
+        </div>
+        <iframe class="code-snippet"
+          src="https://carbon.now.sh/embed?bg=rgba%28208%2C190%2C218%2C0.65%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=27px&dsblur=33px&wc=true&wa=true&pv=23px&ph=17px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=15px&lh=137%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-bordered%2520prim-c%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%253E%2526%25238505%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520bordered%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-bordered%2520sec-c%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%253E%2526%25238505%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520primary%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+          style="width: 747px; height: 202px; border:0; transform: scale(1); overflow:hidden;"
+          sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+        <h3>1. Squared Avatar</h3>
+
+        <div class="container">
+          <img class="avatar xs" src="/css/media/avatar-cat.png">
+          <img class="avatar s" src="/css/media/avatar-cat.png">
+          <img class="avatar m" src="/css/media/avatar-cat.png">
+          <img class="avatar l" src="/css/media/avatar-cat.png">
+        </div>
+        <iframe class="code-snippet"
+        src="https://carbon.now.sh/embed?bg=rgba%28208%2C190%2C218%2C0.65%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=27px&dsblur=33px&wc=true&wa=true&pv=23px&ph=17px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=15px&lh=137%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-bordered%2520prim-c%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%253E%2526%25238505%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520bordered%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-bordered%2520sec-c%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%253E%2526%25238505%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520primary%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+        style="width: 657px; height: 202px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+        </iframe>
+    </div>
+
+  <div class="container-col">
+    <h2>BADGE</h2>
+    <p>This is badge component</p>
+    <hr class="prim-c">
+
+    <h3>1. Simple badge</h3>
+
+    <div class="container">
+      <div class="badge prim xs"></div>
+      <div class="badge sec s"></div>
+      <div class="badge prim m"></div>
+      <div class="badge sec l"></div>
+    </div>  
+
+      <iframe class='code-snippet'
   src="https://carbon.now.sh/embed?bg=rgba%28208%2C190%2C218%2C0.65%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=27px&dsblur=33px&wc=true&wa=true&pv=23px&ph=17px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=15px&lh=137%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-bordered%2520prim-c%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%253E%2526%25238505%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520bordered%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-bordered%2520sec-c%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%253E%2526%25238505%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520primary%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
-  style="width: 558px; height: 346px; border:0; transform: scale(1); overflow:hidden;"
+  style="width: 680px; height: 202px; border:0; transform: scale(1); overflow:hidden;"
   sandbox="allow-scripts allow-same-origin">
 </iframe>
 
 
-   </section>
+   <h3>2. Badge with text</h3>
+    <div class="container">
+        <div class="badge prim">9</div>
+          <div class="badge prim l">99+</div>
+          <div class="badge badge-text prim">Badge</div>
+          <div class="badge badge-text sec">Badge</div>
+    </div>
 
+    <iframe class='code-snippet'
+  src="https://carbon.now.sh/embed?bg=rgba%28208%2C190%2C218%2C0.65%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=27px&dsblur=33px&wc=true&wa=true&pv=23px&ph=17px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=15px&lh=137%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-bordered%2520prim-c%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%253E%2526%25238505%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520bordered%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-bordered%2520sec-c%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%253E%2526%25238505%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520primary%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+  style="width: 680px; height: 202px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+
+     <h3>3. Badge with icon</h3>
+     <div class="container">
+       <div class="badge-cont">
+         <div class="badge prim">9</div>
+         <div class="badge-icon">  <i class='fas fa-shopping-cart fa-2x'></i>
+           </div>
+       </div>
+
+       <div class="badge-cont">
+         <div class="badge sec">9</div>
+         <div class="badge-icon">  <i class='fas fa-envelope fa-2x'></i>
+           </div>
+       </div>
+
+       <div class="badge-cont">
+         <div class="badge sec">9</div>
+         <div class="badge-icon prim-c"> <i class='fas fa-comment fa-2x'></i>
+           </div>
+       </div>
+       </div>
+       <iframe class='code-snippet'
+  src="https://carbon.now.sh/embed?bg=rgba%28208%2C190%2C218%2C0.65%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=27px&dsblur=33px&wc=true&wa=true&pv=23px&ph=17px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=15px&lh=137%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-bordered%2520prim-c%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%253E%2526%25238505%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520bordered%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-bordered%2520sec-c%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%253E%2526%25238505%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520primary%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+  style="width: 680px; height: 531px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+
+       <h3>2. Badge with Avatar</h3>
+       <div class="container">
+
+         <div class="badge-cont">
+           <div class="badge sec"></div>
+           <div class="badge-ava"> <img class="avatar xs img-round" src="/css/media/avatar-cat.png" >
+          </div>
+         </div>
+
+         <div class="badge-cont">
+           <div class="badge sec"></div>
+           <div class="badge-ava"><img class="avatar s img-round" src="/css/media/avatar-cat.png" >
+          </div>
+         </div>
+
+         <div class="badge-cont">
+           <div class="badge sec"></div>
+           <div class="badge-ava"><img class="avatar m img-round" src="/css/media/avatar-cat.png" >
+          </div>
+         </div>
+
+         <div class="badge-cont">
+           <div class="badge sec"></div>
+           <div class="badge-ava"><img class="avatar l img-round" src="/css/media/avatar-cat.png" >
+          </div>
+         </div>
+
+       </div>
+
+       <iframe class='code-snippet'
+  src="https://carbon.now.sh/embed?bg=rgba%28208%2C190%2C218%2C0.65%29&t=twilight&wt=none&l=htmlmixed&width=680&ds=true&dsyoff=27px&dsblur=33px&wc=true&wa=true&pv=23px&ph=17px&ln=false&fl=1&fm=IBM+Plex+Mono&fs=15px&lh=137%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-bordered%2520prim-c%2520%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%253E%2526%25238505%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520bordered%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-bordered%2520sec-c%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520%253E%2526%25238505%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EThis%2520is%2520a%2520primary%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522alert-close%2522%253E%2526%252310540%253B%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+  style="width: 680px; height: 675px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+
+       </div>
+
+
+    </section>
   </div>
-  </body>
+</body>
+
 </html>

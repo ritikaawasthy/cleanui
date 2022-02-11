@@ -10,9 +10,6 @@
    grid-template-rows: 4rem auto auto  ;
 }
 
-.layout-container > * {
-  display: flex;
-}
 
 .layout-head{
   grid-area: head;
@@ -22,10 +19,12 @@
 
 .layout-side{
   grid-area:side;
+  position: fixed;
+  height:100vh;
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
-  padding: 2rem 5rem;
+  padding: 5rem 5rem;
   background-color: var(--palesilver-li);
   /* box-shadow:  */
 }
