@@ -12,7 +12,7 @@
 
 .btn-dis{
   background-color: lightgrey;
-  opacity: 0.3;
+  opacity: 0.8;
 }
 
 .btn-dis:hover{
@@ -28,7 +28,6 @@
 
 .btn-bordered:hover{
   opacity: 1;
-  /* transition: background-color 1s; */
   transition: background-color .35s ease-in-out;
 }
 
