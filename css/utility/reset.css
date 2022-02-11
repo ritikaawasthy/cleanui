@@ -21,7 +21,8 @@
   --sec-light: rgb(20, 20, 20,0.5);
   --sec-x-light: rgb(20, 20, 20,0.5);
   --violetblue:#ADA7FF;
-  --white: #FAFAFF;
+  --white: rgb(255, 255, 255);
+  --white-trans: rgb(255, 255, 255,0.6);
   --dark-purple: #39002E;
   --red: #CB0E01;
   --red-light: #FFB7BA;
@@ -55,6 +56,10 @@ h1,h2,h3,h4,h5,p,header,nav,body{
   margin: 0;
   padding: 0;
 
+}
+
+i:hover{
+  cursor: pointer;
 }
 
 img,

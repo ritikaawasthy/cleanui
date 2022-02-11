@@ -1,100 +1,79 @@
-
 .card{
-  border-radius: 0.5rem;
-  border:none;
-}
-
-.card-vertical{
-  display:grid;
-  grid-gap: 0.3rem;
-  grid-template-areas:
-  "head"
-  "body"
-  "foot";
-}
-
-.card-horizontal{
-  display:grid;
-  grid-gap: 0.3rem;
-  grid-template-areas: "head body foot";
-}
-
-.card-head{
- grid-area: head;
- position: relative;
-  padding: 0.5rem 0.5rem;
-}
-.card-body{
- grid-area: body;
- padding: 0 0.5rem;
-position: relative;
-
-}
-.card-footer{
-grid-area: foot;
- padding: 0.5rem 0.5rem;
   position: relative;
+  display: grid;
+  gap: 0.5rem 0.5rem;
 }
 
-.card-content-horizontal{
-  display: flex;
-  flex-direction: row;
-  gap:0.2rem;
+.card-content,
+.background{
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
-.card-content-vertical{
-  display: flex;
-  flex-direction: column;
-  gap:0.2rem;
+.card-content{
+  display:flex;
+  padding:0.5rem;
+  justify-content: flex-start;
+  align-items: flex-start
 }
+
+.card-content.inline{
+  display: flex;
+  gap: 0.3rem;
+}
+
+.card-content.stacked{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    justify-content: space-between;
+}
+
+
+.card-icon{
+  background-color: var(--white-trans);
+  font-weight: bolder;
+
+  padding: 0.2rem;
+}
+
+.card-icon.right{
+  margin-left:auto;
+
+}
+.card-icon.left{
+  margin-right:auto;
+}
+
+
+
+
+.card-content-head,.card-content-body,.card-content-foot{
+  display: flex;
+  flex-flow: row wrap;
+  width:100%;
+  gap:0.5rem;
+}
+
+.space{
+  justify-content: space-between;
+}
+
+.start{
+  justify-content: flex-start;
+}
+
+.end{
+  justify-content: flex-end;
+}
+
+
 
 .card-shadow{
     box-shadow: 0.5px 0.5px 4px 0.5px lightgrey;
 }
 
-.close{
-  margin-left: auto;
-}
 
-
-/* .card-head-img{
-  width:100%;
-  grid-area: head;
-  border-radius: 0.5rem;
-} */
-
-/* .card-overlap-head{
-  grid-area: head;
-  z-index:2;
-  padding:0.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-} */
-
-/* .card-overlap-body{
-  grid-area: body;
-  padding:0.2rem;
-} */
-
-.card-overlap{
-  position: relative;
-  padding: 0;
-  gap:0;
-}
-
-.card-overlap.card-body,.card-head,.card-footer{
-    z-index: 5;
-}
-
-.card-head-bg-img{
-  grid-area: head/body/foot;
-  z-index: -1;
-}
-.card-body-bg-img{
-  grid-area: body;
-  z-index: -1;
-}
 
 .card-border{
   border: 1px solid;
@@ -107,27 +86,27 @@ grid-area: foot;
 
 
 /* card sizing */
-.card.s{
+.card.w-s{
   width: 15rem;
   height: fit-content;
 
 }
-.card.m{
+.card.w-m{
   width: 20rem;
   height: fit-content;
 }
 
-.card.l{
+.card.w-l{
   width: 25rem;
   height: fit-content;
 }
 
-.card.xl{
+.card.w-xl{
   width: 30rem;
   height: fit-content;
 }
 
-.card.xxl{
+.card.w-xxl{
   width: 35rem;
   height: fit-content;
 }
