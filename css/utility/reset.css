@@ -34,7 +34,7 @@
   --blue-light: #BBDEFB;
   --palesilver: #D6CCC2;
   --palesilver-li: rgb(214, 204, 194,0.4);
-  --lightgrey: lightgrey;
+  --grey-light: lightgrey;
   --grey: grey;
 
   color: rgb(20, 20, 20);
@@ -48,7 +48,7 @@
 
 html{
   font-size:100%;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', serif, "Font Awesome 5 Free";
   box-sizing: border-box;
 }
 
@@ -80,6 +80,7 @@ ul,ol{
   display: flex;
   gap : 10px;
   flex-flow:row wrap;
+  padding: 1rem 0rem;
 }
 
 .container-col{
