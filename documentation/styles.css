@@ -1,13 +1,13 @@
 .layout-container{
   display: grid;
-  grid-template-areas: "head head head"
-  "side main  main"
-  "side main  main"
-  "side main  main"
-  "foot foot foot";
+  grid-template-areas: "head head head head"
+  "side main main main"
+  "side main main main"
+  "side main main main";
+  /* "si foot foot foot"; */
    height:100vh;
-   grid-template-columns: 20rem 1fr 1fr ;
-   grid-template-rows: 4rem auto auto  ;
+   grid-template-columns: 20rem 1fr 1fr 1fr;
+   grid-template-rows: 4rem auto auto auto ;
 }
 
 .layout-container > * {
@@ -26,15 +26,12 @@
   flex-flow: column wrap;
   justify-content: flex-start;
   padding: 2rem 5rem;
+  /* padding: 1rem 4rem; */
   background-color: var(--palesilver-li);
-  /* box-shadow:  */
 }
 
 .layout-main{
   grid-area:main;
-  padding: 2rem;
-
-
 }
 
 .layout-footer{
@@ -43,20 +40,11 @@
 
 .active{
   background-color: var(--prim-x-light);
-  box-shadow: 1px 1px 10px 2px var(--prim-x-light);
-
 }
 
 .list>li:hover{
   font-weight: bolder;
   cursor: pointer;
-  background-color: var(--prim-x-light);
-  box-shadow: 1px 1px 10px 2px var(--prim-x-light);
-}
-
-nav>.list>li:hover{
-  box-shadow: 1px 1px 10px 2px var(--palesilver-li);
-  background-color: var(--palesilver-li);
 }
 
 .list-inline{
@@ -72,7 +60,7 @@ nav>.list>li:hover{
   gap: 0.5rem;
 }
 
-ul>li{
+.list-stacked>li{
   padding:0.5rem;
 }
 
@@ -83,10 +71,4 @@ ul>li{
   align-items: center;
   justify-content: flex-start;
   padding-left: 20rem;
-}
-
-hr{
-  border: 1px solid;
-  width: 100%;
-  color: var(--grey);
 }

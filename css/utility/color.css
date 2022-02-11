@@ -58,11 +58,10 @@
   color: var(--sec);
 }
 
-.white-c{
-  color: white;
+.palesilver-c{
+  color: var(--palesilver);
 }
 
-.palesilver-li{
-  background-color: var(--palesilver-li);
-  color: var(--sec);
+.white-c{
+  color: white;
 }

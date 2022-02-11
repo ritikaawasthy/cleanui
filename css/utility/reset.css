@@ -23,17 +23,19 @@
   --violetblue:#ADA7FF;
   --white: #FAFAFF;
   --dark-purple: #39002E;
-  --red: #CB0E01;
+  --red: #bf0000;
   --red-light: #FFB7BA;
-  --yellow: #FFB700;
+  --yellow: #9c821c;
   --yellow-light: #FFF8B5;
-  --green: #60D394;
+  --green: #1f6e00;
   --green-light:#CBF9B3;
   --base-col: #EDEDE9;
-  --blue: #42A5F5;
-  --blue-li: #BBDEFB;
+  --blue: #001678;
+  --blue-light: #BBDEFB;
   --palesilver: #D6CCC2;
   --palesilver-li: rgb(214, 204, 194,0.4);
+  --lightgrey: lightgrey;
+  --grey: grey;
 
   color: rgb(20, 20, 20);
 
@@ -98,6 +100,13 @@ ul,ol{
 
 button:hover{
   cursor: pointer;
+}
+
+.code-snippet{
+  max-height: 15rem;
+  overflow: scroll;
+  border-radius: 0.5rem;
+  width: 100%;
 }
 
 @media only screen and (max-width:300px){
