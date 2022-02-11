@@ -7,11 +7,10 @@
 
 .btn:hover{
   opacity: 0.5;
-  /* background-color: transparent; */
 }
 
 .btn-dis{
-  background-color: lightgrey;
+  background-color: var(--grey-light);
   opacity: 0.8;
 }
 
