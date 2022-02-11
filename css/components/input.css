@@ -11,3 +11,7 @@
 .input:focus {
     outline: none;
 }
+
+.input-full{
+  width:100%;
+}
