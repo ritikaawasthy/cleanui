@@ -10,11 +10,14 @@
 }
 
 .list-stacked>li{
-  border: 1px solid ;
   padding:0.5rem;
   display : flex;
   gap:0.5rem;
   align-items: center;
+}
+
+.list-stacked.bordered>li{
+    border: 1px solid ;
 }
 
 .list-stacked>li:hover{
