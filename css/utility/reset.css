@@ -101,6 +101,14 @@ button:hover{
   cursor: pointer;
 }
 
+i{
+  font-style: none;
+}
+
+i:hover{
+  cursor: pointer;
+}
+
 .code-snippet{
   max-height: 15rem;
   overflow: scroll;
