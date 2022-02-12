@@ -53,19 +53,7 @@
   display: flex;
   flex-flow: row wrap;
   width:100%;
-  gap:0.5rem;
-}
-
-.space{
-  justify-content: space-between;
-}
-
-.start{
-  justify-content: flex-start;
-}
-
-.end{
-  justify-content: flex-end;
+  gap:8px;
 }
 
 .card-shadow{
