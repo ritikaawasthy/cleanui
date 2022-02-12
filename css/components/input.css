@@ -15,3 +15,12 @@
 .input-full{
   width:100%;
 }
+
+.input-error{
+  border-bottom: 4px solid var(--red);
+}
+
+.input-error-icon:after{
+  font-family: FontAwesome;
+    content: "\f06a";
+}
