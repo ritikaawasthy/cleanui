@@ -6,7 +6,7 @@
   "foot foot";
   grid-template-columns: 20rem 1fr;
   grid-template-rows: 4rem 1fr 1fr 7rem;
-  height:100vh;
+  height:100%;
 }
 
 .grid-layout-side{
@@ -52,15 +52,12 @@
 
 .grid-three-layout-right{
   grid-area: third-right;
-  background-color: red;
 }
 
 .grid-three-layout-left{
   grid-area: third-left;
-  background-color: yellow;
 }
 
 .grid-three-layout-center{
   grid-area: third-center;
-  background-color: pink;
 }
