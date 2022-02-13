@@ -21,8 +21,7 @@
   --sec-light: rgb(20, 20, 20,0.5);
   --sec-x-light: rgb(20, 20, 20,0.5);
   --violetblue:#ADA7FF;
-  --white: rgb(255, 255, 255);
-  --white-trans: rgb(255, 255, 255,0.6);
+  --white: #FAFAFF;
   --dark-purple: #39002E;
   --red: #bf0000;
   --red-light: #FFB7BA;
@@ -35,7 +34,6 @@
   --blue-light: #BBDEFB;
   --palesilver: #D6CCC2;
   --palesilver-li: rgb(214, 204, 194,0.4);
-  --text-bg: rgb(214, 204, 194,0.2);
   --grey-light: lightgrey;
   --grey: grey;
 
@@ -58,10 +56,6 @@ h1,h2,h3,h4,h5,p,header,nav,body{
   margin: 0;
   padding: 0;
 
-}
-
-i:hover{
-  cursor: pointer;
 }
 
 img,
@@ -114,18 +108,6 @@ button:hover{
   overflow: scroll;
   border-radius: 0.5rem;
   width: 100%;
-}
-
-.fl-space{
-  justify-content: space-between;
-}
-
-.fl-start{
-  justify-content: flex-start;
-}
-
-.fl-end{
-  justify-content: flex-end;
 }
 
 @media only screen and (max-width:300px){
