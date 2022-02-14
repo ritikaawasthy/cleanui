@@ -19,7 +19,9 @@
   opacity: 0.3;
 }
 
+
 .btn-bordered{
+
   background-color: transparent;
   border: 2px solid ;
   box-sizing: border-box;
