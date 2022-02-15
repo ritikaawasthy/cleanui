@@ -38,7 +38,6 @@
 .input:focus {
     outline: none;
 }
-
 .input-error{
   border-bottom: 2px solid var(--red);
 }
