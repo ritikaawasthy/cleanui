@@ -34,8 +34,10 @@
   --blue-light: #BBDEFB;
   --palesilver: #D6CCC2;
   --palesilver-li: rgb(214, 204, 194,0.4);
+  --text-bg: rgb(214, 204, 194,0.2);
   --grey-light: lightgrey;
   --grey: grey;
+
 
   color: rgb(20, 20, 20);
 
