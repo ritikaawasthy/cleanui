@@ -2,16 +2,11 @@
   padding: 0.8rem 1rem;
   border: none;
   border-radius: 0.5rem;
-
-}
-
-.btn:hover{
-  opacity: 0.5;
 }
 
 .btn-dis{
   background-color: var(--grey-light);
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 .btn-dis:hover{
@@ -19,14 +14,15 @@
   opacity: 0.3;
 }
 
+
 .btn-bordered{
+
   background-color: transparent;
   border: 2px solid ;
   box-sizing: border-box;
 }
 
 .btn-bordered:hover{
-  opacity: 1;
   transition: background-color .35s ease-in-out;
 }
 

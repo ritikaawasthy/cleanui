@@ -21,8 +21,7 @@
   --sec-light: rgb(20, 20, 20,0.5);
   --sec-x-light: rgb(20, 20, 20,0.5);
   --violetblue:#ADA7FF;
-  --white: rgb(255, 255, 255);
-  --white-trans: rgb(255, 255, 255,0.6);
+  --white: #FAFAFF;
   --dark-purple: #39002E;
   --red: #bf0000;
   --red-light: #FFB7BA;
@@ -38,6 +37,7 @@
   --text-bg: rgb(214, 204, 194,0.2);
   --grey-light: lightgrey;
   --grey: grey;
+
 
   color: rgb(20, 20, 20);
 
@@ -60,17 +60,13 @@ h1,h2,h3,h4,h5,h6,p,header,nav,body,input,label{
 
 }
 
-i:hover{
-  cursor: pointer;
-}
-
 img,
 video,
 iframe {
   max-inline-size: 100%;
   block-size: auto;
-  /* aspect-ratio: 2/1;
-  object-fit: contain;
+  /* aspect-ratio: 1/1; */
+  /* object-fit: fill;
   object-position:center; */
 }
 
@@ -96,16 +92,16 @@ ul,ol{
   gap : 1rem;
 }
 
-.img-responsive{
-  width:100%;
-  height:auto;
-}
-
-.img-round{
-  border-radius: 50%;
-}
 
 button:hover{
+  cursor: pointer;
+}
+
+i{
+  font-style: none;
+}
+
+i:hover{
   cursor: pointer;
 }
 
@@ -114,18 +110,6 @@ button:hover{
   overflow: scroll;
   border-radius: 0.5rem;
   width: 100%;
-}
-
-.fl-space{
-  justify-content: space-between;
-}
-
-.fl-start{
-  justify-content: flex-start;
-}
-
-.fl-end{
-  justify-content: flex-end;
 }
 
 @media only screen and (max-width:300px){

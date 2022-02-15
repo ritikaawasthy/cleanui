@@ -33,7 +33,9 @@
 .red{
   background-color: var(--red-light);
   color: var(--red);
-
+}
+.red-c{
+    color: var(--red);
 }
 
 .yellow{
@@ -66,6 +68,6 @@
   color: white;
 }
 
-.white-trans-bg{
-  background-color: var(--white-trans);
+.white-bg{
+  background-color: white;
 }
