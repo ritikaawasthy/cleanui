@@ -60,10 +60,6 @@ h1,h2,h3,h4,h5,p,header,nav,body{
 
 }
 
-i:hover{
-  cursor: pointer;
-}
-
 img,
 video,
 iframe {
@@ -100,6 +96,11 @@ ul,ol{
 button:hover{
   cursor: pointer;
 }
+
+i:hover{
+  cursor: pointer;
+}
+
 
 .code-snippet{
   max-height: 15rem;
