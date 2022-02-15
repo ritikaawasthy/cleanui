@@ -10,8 +10,8 @@
 </head>
 
 <body>
-  <div class='layout-container'>
-    <header class='layout-head prim-li'>
+  <div class='grid-layout-container'>
+    <header class='grid-layout-header prim-li'>
       <nav class="nav">
         <ul class="list list-inline f-m sec-c">
           <li class='active'>Home</li>
@@ -20,7 +20,7 @@
       </nav>
     </header>
 
-    <section class="layout-side">
+    <section class="grid-layout-side palesilver-li">
       <ul class="list list-stacked f-m">
         <li class='active'>Alert</li>
         <li>Avatar</li>
@@ -32,7 +32,7 @@
         <li>Utility</li>
       </ul>
     </section>
-    <section class="layout-main">
+    <section class="grid-layout-main">
       <div class="container-col">
 
         <h2>ALERT</h2>
@@ -236,9 +236,8 @@
         </iframe>
 
 
-    
-
       <div class="container-col">
+
         <h2>BUTTON</h2>
         <p>This is button component</p>
         <hr class="prim-c">
@@ -254,99 +253,161 @@
           <button type="button" class='btn sec'>
             <i class='fas fa-fast-forward'></i> Button
           </button>
-        </div>
-      </div>
 
-      <div class="container-col">
-        <h2>Card</h2>
-        <hr class='prim-c'>
-
-        <h3>1. Text Cards</h3>
-      <div class="container">
-
-        <div class="card card-shadow w-s">
-          <div class="card-content stacked">
-            <h2>Heading card</h2>
-            <hr class='sec-c'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Utenim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-             </p>
-             <div class='card-content inline' >
-               <span class='badge badge-text prim'>Bagde</span>
-               <span class='badge badge-text sec'>Badge</span>
-             </div>
-          </div>
         </div>
 
-        <div class="card card-shadow w-l">
-          <div class="card-content inline">
-            <img  class='background' src="https://picsum.photos/id/1043/200/300" alt="picture">
-            <div class="card-content stacked">
-              <h2>Heading card</h2>
-              <hr class='sec-c'>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                 sunt in culpa.</p>
-                 <div class='card-content inline' >
-                   <span class='badge badge-text prim'>Bagde</span>
-                   <span class='badge badge-text sec'>Badge</span>
-                 </div>
-          </div>
-          </div>
-        </div>
-        </div>
-        <iframe class="code-snippet"
-  src="https://carbon.now.sh/embed/YOQIzJedorNGrLMaODut"
-  style="width: 680px; height: 963px; border:0; transform: scale(1); overflow:hidden;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
-        <h3>3. Background Image Cards</h3>
+        <h2>CARD</h2>
+        <p>This is card component</p>
+        <hr class="prim-c">
+
+        <h3>1. Card with badge and text</h3>
         <div class="container">
 
-          <div class="card card-shadow w-s">
-            <img  class='background' src="https://picsum.photos/id/1043/300/350" alt="picture">
-            <div class="card-content stacked">
-              <div class="card-content-head">
-                <h2 class="white-trans-bg">Heading</h2>
-                <span class='card-icon right'>&#10540;</span>
-              </div>
-              <div class='card-content-foot inline' >
-                <span class='badge badge-text prim'>Bagde</span>
-                <span class='badge badge-text sec'>Badge</span>
+          <div class="card card-vertical card-shadow s">
+            <div class="card-head">
+              <h2>Card Heading</h2>
+              <hr class='prim-li'>
+            </div>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat</p>
+            </div>
+            <div class="card-footer card-content-horizontal">
+              <span class="badge badge-text prim">Badge</span>
+              <span class="badge badge-text sec">Badge</span>
+            </div>
+          </div>
+
+        </div>
+
+        <h3>2. Card with image</h3>
+
+        <div class="container">
+
+          <div class="card card-vertical card-shadow s">
+            <div class="card-head">
+              <h2>Card Heading</h2>
+              <img src="https://picsum.photos/id/1043/600/300"></img>
+            </div>
+            <div class="card-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+            <div class="card-footer card-content-horizontal">
+              <span class="badge badge-text prim">Badge</span>
+              <span class="badge badge-text sec">Badge</span>
+            </div>
+          </div>
+
+          <div class="card card-vertical card-shadow s">
+            <img src="https://picsum.photos/id/1043/600/300"></img>
+            <div class="card-body">
+              <h2>Card Heading</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+            <div class="card-footer card-content-horizontal">
+              <span class="badge badge-text prim">Badge</span>
+              <span class="badge badge-text sec">Badge</span>
+            </div>
+          </div>
+
+          <div class="card card-horizontal card-shadow l">
+            <img src="https://picsum.photos/id/1043/400/600"></img>
+            <div class="card-body card-vertical">
+              <h2>Card Heading</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              </p>
+              <div class="card-footer card-content-horizontal">
+                <span class="badge badge-text prim">Badge</span>
+                <span class="badge badge-text sec">Badge</span>
               </div>
             </div>
           </div>
 
-          <div class="card card-shadow w-m">
-            <img  class='background' src="https://picsum.photos/id/1043/350/350" alt="picture">
-            <div class="card-content stacked">
-              <div class="card-content-head">
-                <h2 class="white-trans-bg">Heading</h2>
-                <span class='card-icon right'>&#10540;</span>
-              </div>
-              <div class="card-content-body fl-space">
-                <i class="fas fa-angle-double-left white-trans-bg f-m"></i>
-                <i class="fas fa-angle-double-right white-trans-bg f-m"></i>
-              </div>
-              <div class='card-content-foot inline fl-end' >
-                <button class='btn prim'>Button1</button>
-                <button class='btn sec'>Button2</button>
+          <div class="card card-vertical card-shadow card-overlap s">
+            <img class="card-head-bg-img" src="https://picsum.photos/id/1043/400/600">
+            <div class="card-head">
+              <h1>Heading</h1>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn prim ">Button</button>
+              <button type="button" class="btn btn-bord prim-c">Button</button>
+            </div>
+          </div>
+
+          <div class="card card-horizontal card-shadow card-overlap m">
+            <img class="card-head-bg-img" src="https://picsum.photos/id/1043/900/500">
+            <div class="card-body card-vertical">
+              <h1>Heading</h1>
+              <div class="card-footer">
+                <button type="button" class="btn prim ">Button</button>
+                <button type="button" class="btn btn-bord prim-c">Button</button>
+
               </div>
             </div>
           </div>
+
+        <div class="container-col">
+          <div class="input-container">
+            <label class="input-label ">Input</label>
+            <input placeholder="input" class="input">
+          </div>
+          <div class="input-container prim-c">
+            <label class="input-label ">Input</label>
+            <input placeholder="input" class="input prim-c">
+          </div>
         </div>
-        <iframe class="code-snippet"
-  src="https://carbon.now.sh/embed/YOQIzJedorNGrLMaODut"
-  style="width: 680px; height: 839px; border:0; transform: scale(1); overflow:hidden;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
+
+       <div class="container">
+         <div class="container-col">
+              <h3>Headings</h3>
+           <h1>Lorem Ipsum</h1>
+           <h2>Lorem Ipsum</h2>
+           <h3>Lorem Ipsum</h3>
+           <h4>Lorem Ipsum</h4>
+           <h5>Lorem Ipsum</h5>
+           <h6>Lorem Ipsum</h6>
+         </div>
+
+
+         <div class="container-col">
+          <h3>Text Center</h3>
+           <p class="f-xxl f-center">Lorem Ipsum</p>
+           <p class="f-xl f-center">Lorem Ipsum</p>
+           <p class="f-l f-center">Lorem Ipsum</p>
+           <p class="f-m f-center">Lorem Ipsum</p>
+           <p class="f-s f-center">Lorem Ipsum</p>
+           <p class="f-xs f-center">Lorem Ipsum</p>
+         </div>
+
+
+         <div class="container-col">
+           <h3>Font Weights</h3>
+           <p class="f-xxl fw-bb">Lorem Ipsum</p>
+           <p class="f-xl fw-b">Lorem Ipsum</p>
+           <p class="f-l fw-med">Lorem Ipsum</p>
+           <p class="f-m fw-reg">Lorem Ipsum</p>
+           <p class="f-s fw-li">Lorem Ipsum</p>
+           <p class="f-xs">Lorem Ipsum</p>
+         </div>
+
+       </div>
+       <iframe class='code-snippet'
+       src="https://carbon.now.sh/embed/uIEOSUHxR8AQJ3L5RK0V"
+       style="width: 540px; height: 757px; border:0; transform: scale(1); overflow:hidden;"
+       sandbox="allow-scripts allow-same-origin">
+     </iframe>
       </div>
 
     </section>
+    <footer class="grid-layout-footer prim">
+      <div>Made with
+        <span class="fas fa-heart sec-c"></span>
+          by Ritika Awasthy</div>
+    </footer>
   </div>
+
 </body>
 
 </html>
