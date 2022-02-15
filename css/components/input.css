@@ -29,7 +29,8 @@
   font-size: 18px;
 }
 
-.input-textarea:focus ~ label, .textarea:not(:placeholder-shown) ~ label {
+
+.input-txtarea:focus ~ label, .textarea:not(:placeholder-shown) ~ label {
   top:-1.2rem;
   font-size: 18px;
   font-weight: bolder;
@@ -48,10 +49,10 @@
 }
 
 .input-container>textarea{
-  border: 1px solid var(--sec-light);
+  border: 1px solid var(--sec-li);
   border-radius: 1rem;
   padding:1rem;
-  background-color: var(--prim-x-light);
+  background-color: var(--prim-x-li);
 }
 
 .input-txtarea-no-resize{
@@ -99,4 +100,3 @@
 .h-l{
   height: 12rem;
 }
-

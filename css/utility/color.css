@@ -17,7 +17,7 @@
 }
 
 .prim-li{
-  background-color: var(--prim-light);
+  background-color: var(--prim-li);
   color:  var(--prim-col);
 }
 
@@ -31,7 +31,7 @@
 
 
 .red{
-  background-color: var(--red-light);
+  background-color: var(--red-li);
   color: var(--red);
 }
 .red-c{
@@ -39,13 +39,13 @@
 }
 
 .yellow{
-  background-color: var(--yellow-light);
+  background-color: var(--yellow-li);
   color: var(--yellow);
   /* border: solid 4px var(--yellow); */
 }
 
 .green{
-  background-color: var(--green-light);
+  background-color: var(--green-li);
   color: var(--green);
   /* border: solid 4px var(--green); */
 }
@@ -70,4 +70,8 @@
 
 .white-bg{
   background-color: white;
+}
+
+.white-trans-bg{
+  background-color: var(--white-trans);
 }

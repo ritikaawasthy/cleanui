@@ -4,24 +4,16 @@
     align-items: center;
     justify-content: space-between;
     padding:1rem;
-    width:100%;
-    box-shadow: -1px 0px 5px 2px;
-}
-
-.start{
-  margin-right:auto;
-}
-.end{
-    margin-left:auto;
+    border: none;
+    gap:0.5rem;
+    /* box-shadow: 0px 0px 1px 1px; */
 }
 
 .side-nav{
-  box-shadow: 1px 1px 2px 2px var(--palesilver-li);
+  position: fixed;
 }
 
 .side-nav>.list>li:hover{
-  font-weight: bolder;
-  cursor: pointer;
   background-color: var(--prim-x-light);
   box-shadow: 1px 1px 10px 2px var(--prim-x-light);
 }
@@ -29,4 +21,6 @@
 nav>.list>li:hover{
   box-shadow: 1px 1px 10px 2px var(--palesilver-li);
   background-color: var(--palesilver-li);
+  cursor: pointer;
+  font-weight: bolder;
 }

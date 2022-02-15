@@ -6,26 +6,6 @@
 }
 
 
-
-/* .list-inline{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  gap: 2rem;
-}
-
-.list-stacked{
-  display: flex;
-  flex-flow: column wrap;
-  gap: 0.5rem;
-} */
-
-/* ul>li{
-  padding:0.5rem;
-} */
-
-
-
 hr{
   border: 1px solid;
   width: 100%;
