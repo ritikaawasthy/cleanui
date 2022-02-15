@@ -65,3 +65,7 @@
 .white-c{
   color: white;
 }
+
+.white-trans-bg{
+  background-color: var(--white-trans);
+}
