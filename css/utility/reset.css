@@ -52,7 +52,7 @@ html{
   box-sizing: border-box;
 }
 
-h1,h2,h3,h4,h5,p,header,nav,body{
+h1,h2,h3,h4,h5,h6,p,header,nav,body,input,label{
   margin: 0;
   padding: 0;
 
