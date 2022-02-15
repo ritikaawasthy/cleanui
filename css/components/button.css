@@ -2,17 +2,11 @@
   padding: 0.8rem 1rem;
   border: none;
   border-radius: 0.5rem;
-  
-}
-
-.btn:hover{
-  opacity: 0.5;
-  /* background-color: transparent; */
 }
 
 .btn-dis{
-  background-color: lightgrey;
-  opacity: 0.3;
+  background-color: var(--grey-light);
+  opacity: 0.5;
 }
 
 .btn-dis:hover{
@@ -20,8 +14,27 @@
   opacity: 0.3;
 }
 
-.btn-bord{
+
+.btn-bordered{
+
   background-color: transparent;
   border: 2px solid ;
   box-sizing: border-box;
+}
+
+.btn-bordered:hover{
+  transition: background-color .35s ease-in-out;
+}
+
+.btn.btn-bordered.prim-c:hover{
+  background-color: var(--sec-col);
+}
+
+.btn.btn-bordered.sec-c:hover{
+  background-color: var(--prim-col);
+}
+
+.btn-float{
+  border-radius: 50%;
+  border: 2px solid ;
 }
