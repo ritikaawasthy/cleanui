@@ -1,15 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,500;0,800;1,400;1,500;1,600;1,700&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,600;1,700&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
-
-  /* font-family: font-family: 'Vollkorn', serif; */
-  /* font-family: 'Cinzel', serif; */
-  /* font-family: 'Cormorant', serif; */
-  /* font-family: 'IBM Plex Serif', serif; */
-  /* font-weight: 400; */
 
 
 :root{
@@ -17,9 +6,17 @@
   --prim-col:#D0BEDA;
   --prim-li: rgb(191, 167, 204,0.5);
   --prim-x-li: rgb(191, 167, 204,0.2);
-  --sec-col: rgb(20, 20, 20);
-  --sec-li: rgb(20, 20, 20,0.5);
-  --sec-x-li: rgb(20, 20, 20,0.5);
+  /* --prim-col: rgb(207, 177, 209);
+  --prim-li: rgb(207, 177, 209,0.7);
+  --prim-x-li: rgb(207, 177, 209,0.2); */
+  /* --prim-col: rgb(165, 145, 186);
+  --prim-li: rgb(165, 145, 186,0.7);
+  --prim-x-li: rgb(165, 145, 186,0.2); */
+
+  /* --prim-dr: */
+  --sec-col: rgb(20, 20, 20, 0.5);
+  --sec-li: rgb(20, 20, 20,0.2);
+  /* --sec-x-li: rgb(20, 20, 20,0.2); */
   --violetblue:#ADA7FF;
   --white: rgb(255, 255, 255);
   --white-trans: rgb(255, 255, 255,0.6);
