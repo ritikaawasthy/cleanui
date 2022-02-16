@@ -1,8 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Syne+Tactile&display=swap');
 html{
   --hero-bg: rgb(214, 204, 194,0.1);
-/* font-family: 'Quintessential', cursive;
-font-family: 'Syne Tactile', cursive; */
+}
+
+.page-container{
+  display: grid;
+  grid-template-areas: "head"
+  "main"
+  "foot";
+  grid-template-columns: 1fr;
+  grid-template-rows: 4rem 1fr 100px;
+  height: 100vh;
+}
+
+.page-footer{
+  grid-area: foot;
+  height: -10vh;
+  background-color: var(--palesilver-li) ;
+  display : flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 1rem;
+  gap:5px;
 }
 
 .active{
@@ -22,6 +41,7 @@ a{
 }
 
 .hero-section{
+  grid-area: main;
   display : flex;
   justify-content: space-around;
   align-items: center;
@@ -33,11 +53,14 @@ a{
   font-size: 5rem;
 }
 
+.page-head{
+  grid-area: head;
+}
+
 nav>.theme-heading{
   font-size: 2rem;
   color: var(--sec-li);
 }
-
 
 .hero-section-text{
   display: flex;
@@ -50,21 +73,7 @@ nav>.theme-heading{
   box-shadow: 10px 10px 50px 50px var(--hero-bg);
 }
 
-
 .inline-section{
   display: flex;
   gap: 1rem;
-}
-
-button{
-  font-style: inherit;
-}
-
-footer{
-  background-color: var(--palesilver-li) ;
-  display : flex;
-  flex-flow: column wrap;
-  align-items: center;
-  padding: 1rem;
-  gap:5px;
 }
