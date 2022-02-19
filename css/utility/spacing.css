@@ -101,3 +101,35 @@
 .mg-l-l{
   margin-left: 1.5rem
 }
+
+.w-s{
+  width: 8rem;
+}
+
+.w-m{
+  width: 16rem;
+}
+
+.w-l{
+  width: 24rem;
+}
+
+.w-xl{
+  width: 36rem;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.h-s{
+  height: 4rem;
+}
+
+.h-m{
+  height: 8rem;
+}
+
+.h-l{
+  height: 12rem;
+}
