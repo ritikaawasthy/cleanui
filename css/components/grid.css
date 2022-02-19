@@ -32,6 +32,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   height:100%;
+  grid-gap: 0.3rem 0.3rem;
 }
 
 .grid-two-layout-right{
@@ -48,7 +49,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   height:100%;
-  grid-gap: 0.5rem;
+  grid-gap: 0.5rem 0.5rem;
 }
 
 .grid-three-layout-right{
