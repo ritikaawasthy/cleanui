@@ -8,6 +8,7 @@
 @import 'components/list.css';
 @import 'components/nav.css';
 @import 'components/image.css';
+@import 'components/snackbar.css';
 @import 'components/modal.css';
 @import 'utility/reset.css';
 @import 'utility/color.css';
