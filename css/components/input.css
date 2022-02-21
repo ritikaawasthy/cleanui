@@ -7,8 +7,8 @@
 .input{
   border:none;
   border-bottom: 1px solid ;
-  padding: 0.5rem;
-  height:2rem;
+  padding: 0.2rem;
+  height:fit-content;
   background-color: transparent;
 }
 
@@ -17,7 +17,7 @@
  font-weight: 600;
  position:absolute;
  left:0;
- top:1.5rem;
+ top:0;
   pointer-events:none;
   transition:0.2s ease all;
   -moz-transition:0.2s ease all;
@@ -67,36 +67,4 @@
    transition:0.2s ease all;
    -moz-transition:0.2s ease all;
    -webkit-transition:0.2s ease all;
-}
-
-.w-s{
-  width: 8rem;
-}
-
-.w-m{
-  width: 16rem;
-}
-
-.w-l{
-  width: 24rem;
-}
-
-.w-xl{
-  width: 36rem;
-}
-
-.w-full{
-  width: 100%;
-}
-
-.h-s{
-  height: 4rem;
-}
-
-.h-m{
-  height: 8rem;
-}
-
-.h-l{
-  height: 12rem;
 }
