@@ -65,21 +65,3 @@
 .grid-three-layout-center{
   grid-area: third-center;
 }
-
-
-@media only screen and (max-width:500px){
-  :root{
-    font-size: 70%;
-  }
-
-  .grid-three-layout-container{
-    display: grid;
-    grid-template-areas: "third-left"
-     "third-center"
-     "third-right";
-    grid-template-columns: 1vh;
-    grid-template-rows: 1fr 1fr 1fr;
-    height:100vh;
-    grid-gap: 0.5rem;
-  }
-}

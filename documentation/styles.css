@@ -8,9 +8,18 @@ html{
   grid-template-areas: "head"
   "main"
   "foot";
-  grid-template-columns: 1fr;
+  grid-template-columns: 100vw;
   grid-template-rows: 4rem 1fr 100px;
   height: 100vh;
+  width: 100vw;
+}
+
+.hero-section{
+  grid-area: main;
+  display : flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 7rem;
 }
 
 .page-footer{
@@ -40,13 +49,6 @@ a{
   color: inherit;
 }
 
-.hero-section{
-  grid-area: main;
-  display : flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 2rem 7rem;
-}
 
 .theme-heading{
   font-family: 'Syne Tactile', cursive;
@@ -71,9 +73,60 @@ nav>.theme-heading{
   padding: 0 2rem;
   background-color: var(--hero-bg);
   box-shadow: 10px 10px 50px 50px var(--hero-bg);
+  width:fit-content;
 }
 
 .inline-section{
   display: flex;
   gap: 1rem;
+}
+
+
+@media only screen and (max-width: 800px){
+  :root{
+    font-size: 70%;
+  }
+
+  .hero-section{
+    grid-area: main;
+    display : flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 0;
+  }
+
+  .grid-two-layout-container{
+    display: grid;
+    grid-template-areas:
+    "sec-right"
+     "sec-left";
+    grid-template-columns: 100vw;
+    grid-template-rows: 1fr 1fr ;
+    height:auto;
+    width:100%;
+  }
+}
+
+
+@media only screen and (max-width: 1106px) and (min-width: 800px){
+  :root{
+    font-size: 90%;
+  }
+
+  .hero-section{
+    grid-area: main;
+    display : flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .grid-two-layout-container{
+    grid-template-areas:
+    "sec-right sec-left";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto ;
+  }
+
+
 }
