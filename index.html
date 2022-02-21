@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
     <title>tranqlity</title>
@@ -290,16 +291,40 @@ sandbox="allow-scripts allow-same-origin">
                  </div>
             </section>
 
-
-           <footer class="grid-layout-footer prim">
-              <div>Made with
-                <span class="fas fa-heart sec-c"></span>
-                  by Ritika Awasthy</div>
-            </footer>
-
+  modal 
+<div class="container">
+       <h4>Click the button to open the modal</h4>
+        <button id="modal-open-btn" class="btn prim">OPEN</button>
+     </div>
 
 
+  <div class="modal-container">
+    <div class="modal card card-shadow w-m">
+      <div class="card-content stacked">
+        <div class="card-content-head">
+          <h2>This is modal</h2>
+          <i id="modal-close-btn" class="fas fa-close card-icon round right"></i>
+        </div>
+        <div class="card-content-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit e
+            sse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+           proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <div class="card-content inline">
+            <button class="btn btn-bordered prim">Button</button>
+          </div>
+        </div>
 
+      </div>
+    </div>
+  </div>
+
+ <script type="module" src="js/main.js">
+
+ </script>
     </section>
 
   </body>
