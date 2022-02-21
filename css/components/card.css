@@ -82,6 +82,12 @@
 }
 
 /* CARD SIZING */
+.card.w-xs{
+  width: 13rem;
+  height: fit-content;
+
+}
+
 .card.w-s{
   width: 15rem;
   height: fit-content;
