@@ -81,6 +81,22 @@ nav>.theme-heading{
   gap: 1rem;
 }
 
+.docs-sidebar{
+  padding: 2rem;
+  overflow: scroll;
+  height: 80%;
+
+}
+
+.docs-sidebar>li{
+  padding:0.5rem;
+}
+
+.docs-sidebar>li:hover{
+  box-shadow: 1px 1px 5px 5px var(--prim-li);
+  cursor: pointer;
+}
+
 
 @media only screen and (max-width: 800px){
   :root{
