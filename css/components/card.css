@@ -42,13 +42,15 @@
 
 .card-icon.right{
   margin-left:auto;
+  height: fit-content;
 
 }
 .card-icon.left{
   margin-right:auto;
+  height: fit-content;
 }
 
-.card-icon-bg-round{
+.round{
   border-radius: 50%;
   padding: 0.5rem;
 }
@@ -80,6 +82,12 @@
 }
 
 /* CARD SIZING */
+.card.w-xs{
+  width: 13rem;
+  height: fit-content;
+
+}
+
 .card.w-s{
   width: 15rem;
   height: fit-content;

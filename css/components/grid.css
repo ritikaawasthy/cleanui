@@ -6,7 +6,7 @@
   "foot foot";
   grid-template-columns: 20rem 1fr;
   grid-template-rows: 4rem 1fr 1fr 7rem;
-  height:100%;
+  min-height:100vh;
 }
 
 .grid-layout-side{
@@ -32,6 +32,8 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   height:100%;
+  grid-gap: 0.5rem 0.5rem;
+  width:100%;
 }
 
 .grid-two-layout-right{
@@ -48,6 +50,8 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   height:100%;
+  width:100%;
+  grid-gap: 0.5rem 0.5rem;
 }
 
 .grid-three-layout-right{
@@ -60,4 +64,22 @@
 
 .grid-three-layout-center{
   grid-area: third-center;
+}
+
+
+@media only screen and (max-width:500px){
+  :root{
+    font-size: 70%;
+  }
+
+  .grid-three-layout-container{
+    display: grid;
+    grid-template-areas: "third-left"
+     "third-center"
+     "third-right";
+    grid-template-columns: 1vh;
+    grid-template-rows: 1fr 1fr 1fr;
+    height:100vh;
+    grid-gap: 0.5rem;
+  }
 }
