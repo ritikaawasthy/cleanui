@@ -89,12 +89,8 @@ i:hover{
   cursor: pointer;
 }
 
-
-.code-snippet{
-  max-height: 15rem;
-  overflow: scroll;
-  border-radius: 0.5rem;
-  width: 100%;
+a.btn:hover{
+  cursor:pointer;
 }
 
 .fl-space{
@@ -121,6 +117,6 @@ i:hover{
     margin-left:auto;
 }
 
-@media only screen and (max-width:400px){
-  html{font-size:50% }
+.active{
+  background-color: var(--palesilver-li);
 }

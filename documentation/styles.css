@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Syne+Tactile&display=swap');
 html{
   --hero-bg: rgb(214, 204, 194,0.1);
+  scroll-behavior: smooth;
 }
 
 .page-container{
@@ -12,6 +13,10 @@ html{
   grid-template-rows: 4rem 1fr 100px;
   height: 100vh;
   width: 100vw;
+}
+
+.page-head{
+  grid-area: head;
 }
 
 .hero-section{
@@ -36,7 +41,6 @@ html{
 .active{
   background-color: var(--prim-x-light);
   box-shadow: 1px 1px 10px 2px var(--prim-x-light);
-
 }
 
 hr{
@@ -55,9 +59,6 @@ a{
   font-size: 5rem;
 }
 
-.page-head{
-  grid-area: head;
-}
 
 nav>.theme-heading{
   font-size: 2rem;
@@ -82,10 +83,10 @@ nav>.theme-heading{
 }
 
 .docs-sidebar{
-  padding: 2rem;
+  padding: 3rem;
   overflow: scroll;
-  height: 80%;
-
+  height: 70%;
+  position: fixed;
 }
 
 .docs-sidebar>li{
@@ -93,14 +94,26 @@ nav>.theme-heading{
 }
 
 .docs-sidebar>li:hover{
-  box-shadow: 1px 1px 5px 5px var(--prim-li);
+  border-bottom: 2px solid var(--prim-col);
+  color: var(--sec-col);
+  font-weight: bold;
   cursor: pointer;
+  -webkit-box-shadow: 0 10px 10px -10px var(--prim-col);
+   -moz-box-shadow: 0 10px 10px -10px var(--prim-col);
+        box-shadow: 0 10px 10px -10px var(--prim-col);
+}
+
+.code-snippet{
+  max-height: 15rem;
+  max-width: 60rem;
+  overflow: scroll;
+  border-radius: 0.5rem;
 }
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) and (min-width: 200px){
   :root{
-    font-size: 70%;
+    font-size: 80%;
   }
 
   .hero-section{
@@ -121,10 +134,23 @@ nav>.theme-heading{
     height:auto;
     width:100%;
   }
+
+  .grid-three-layout-container{
+    grid-template-areas:
+    "third-left"
+    "third-center"
+    "third-right";
+    width: 100%;
+  }
+
+  .code-snippet{
+    max-width: 20rem;
+  }
+
 }
 
 
-@media only screen and (max-width: 1106px) and (min-width: 800px){
+@media only screen and (max-width: 1106px) and (min-width: 801px){
   :root{
     font-size: 90%;
   }

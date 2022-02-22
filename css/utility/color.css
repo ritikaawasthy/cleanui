@@ -50,6 +50,10 @@
   /* border: solid 4px var(--green); */
 }
 
+.green-c{
+    color: var(--green);
+}
+
 .blue{
   background-color: var(--blue-li);
   color: var(--blue);

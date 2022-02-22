@@ -1,66 +1,1216 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Docs</title>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docs</title>
+  <link rel="stylesheet" href="/documentation/css/prism.css">
+  <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/documentation/styles.css">
-    <link rel="stylesheet" href="/styles.css">
-    <script src="https://kit.fontawesome.com/854a67f594.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <section class="grid-layout-container">
+  <script src="https://kit.fontawesome.com/854a67f594.js" crossorigin="anonymous"></script>
+</head>
 
-      <section class="grid-layout-header">
-        <header class="page-head">
-          <nav class="nav prim-li">
-            <h4 class="theme-heading">Tranq<span class="head-span palesilver-c">UI</span>lity</h4>
-            <ul class="list list-inline sec-c f-l">
-              <li> <a class="active" href="#"></li>Home</a></li>
-              <li><a href="documentation/templates/docs.html">Docs</a></li>
-            </ul>
-          </nav>
-        </header>
-      </section>
+<body>
+  <section class="grid-layout-container">
 
-      <section class="grid-layout-side palesilver-li">
+    <section class="grid-layout-header">
+      <header class="page-head">
+        <nav class="nav prim-li">
+          <h4 class="theme-heading"><a href="/index.html">Tranq<span class="head-span palesilver-c">UI</span>lity</a></h4>
+          <ul class="list list-inline sec-c f-l">
+            <li> <a class="active" href="/index.html"></li>Home</a></li>
+            <li><a href="/">Docs</a></li>
+            <li><a href="https://github.com/ritikaawasthy" class="fa-brands fa-github f-l"></a></li>
+            <li><a href="https://twitter.com/Ritikaawasthy" class="fa-brands fa-twitter f-l"></a></li>
+            <li><a href="https://www.linkedin.com/in/ritika-awasthy/" class="fa-brands fa-linkedin f-l"></a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
 
-          <ul class="docs-sidebar f-m">
-          <li class='active'>Alert</li>
-          <li id="avatar-btn">Avatar</li>
-          <li id="badge-btn">Badge</li>
-          <li id="button-btn">Button</li>
-          <li id="card-btn">Card</li>
-          <li id="image-btn">Image</li>
-          <li id="input-btn">Input</li>
-          <li id="list-btn">List</li>
-          <li id="nav-btn">Nav</li>
-          <li id="list-btn">List</li>
-          <li id="modal-btn">Modal</li>
-          <li id="grid-btn">Grid</li>
-          <li id="rating-btn">Rating</li>
-          <li id="snb-btn">Snackbar</li>
-          <li id="text-util-btn">Text Utility</li>
+    <section class="grid-layout-side palesilver-li">
+
+      <ul class="docs-sidebar f-m">
+        <li class="fw-bb f-l">Get Started</li>
+        <li id="usage">Usage</li>
+        <li class="fw-bb f-l" >Components</li>
+        <li id="alert">Alert</li>
+        <li id="avatar">Avatar</li>
+        <li id="badge">Badge</li>
+        <li id="card">Card</li>
+        <li id="button">Button</li>
+        <li id="input">Input</li>
+        <li id="text-utill">Text Utility</li>
+        <li id="list">Lists</li>
+        <li id="image">Image</li>
+        <li id="nav">Navigation</li>
+        <li id="rate">Rating</li>
+        <li id="modal">Modal</li>
+        <li id="snb">Snackbar</li>
+        <li id="grids">Grids</li>
+      </ul>
+
+    </section>
+
+    <section class="grid-layout-main">
+      <article class="container-col">
+
+        <h3 id="doc-usage">Usage</h3>
+        This is how you can use these components, just include these tags in your HTML and CSS file and you're good to go.
+        <pre class="language-markup code-snippet"><code><!--
+          //HTML
+          <link rel="stylesheet" href="https://traquil-ui.netlify.app/styles.css">
+
+          //CSS
+          @import url("https://traquil-ui.netlify.app/styles.css");
+        --></code></pre>
+
+        <h3 id="doc-alert">ALERT</h3>
+        <p class='f-s'>Alerts provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages. To use this alert just use class name alert and also add class for required color and icons(e.g. class="alert prim" ). You can copy html part from below code snippet.</p>
+        <hr class="prim-c">
+
+        <h4>1. Simple alert</h4>
+        <div class="alert prim">
+          <p>This is a primary Alert!</p>
+          <span class="alert-close">&#10540;</span>
+        </div>
+
+        <div class="alert sec">
+          <p>This is a secondary Alert!</p>
+          <span class="alert-close">&#10540;</span>
+        </div>
+
+        <h4>2. Alerts with icon</h4>
+
+        <div class="alert red">
+          <span>&#9888;</span>
+          <p>This is a red Alert!</p>
+          <span class="alert-close">&#10540;</span>
+        </div>
+
+        <div class="alert yellow">
+          <span>&#9888;</span>
+          <p>This is a yellow Alert!</p>
+          <span class="alert-close">&#10540;</span>
+        </div>
+
+        <div class="alert green">
+          <span>&#9745;</span>
+          <p>This is a green Alert!</p>
+          <span class="alert-close">&#10540;</span>
+        </div>
+
+        <div class="alert blue">
+          <span>&#8505;</span>
+          <p>This is a primary Alert!</p>
+          <span class="alert-close">&#10540;</span>
+        </div>
+
+
+        <h4>2. Alerts with border</h4>
+        <div class="alert alert-bordered prim-c ">
+          <span>&#8505;</span>
+          <p>This is a bordered Alert!</p>
+          <span class="alert-close">&#10540;</span>
+        </div>
+        <div class="alert alert-bordered sec-c">
+          <span>&#8505;</span>
+          <p>This is a primary Alert!</p>
+          <span class="alert-close">&#10540;</span>
+        </div>
+
+        <pre class="language-markup code-snippet">
+          <code><!--<h4>1. Simple alert</h4>
+          <div class="alert prim">
+            <p>This is a primary Alert!</p>
+            <span class="alert-close">&#10540;</span>
+          </div>
+          <div class="alert sec">
+            <p>This is a secondary Alert!</p>
+            <span class="alert-close">&#10540;</span>
+          </div>
+          <h4>2. Alerts with icon</h4>
+          <div class="alert red">
+            <span>&#9888;</span>
+            <p>This is a red Alert!</p>
+            <span class="alert-close">&#10540;</span>
+          </div>
+          <div class="alert yellow">
+            <span>&#9888;</span>
+            <p>This is a yellow Alert!</p>
+            <span class="alert-close">&#10540;</span>
+          </div>
+          <div class="alert green">
+            <span>&#9745;</span>
+            <p>This is a green Alert!</p>
+            <span class="alert-close">&#10540;</span>
+          </div>
+          <div class="alert blue">
+            <span>&#8505;</span>
+            <p>This is a primary Alert!</p>
+            <span class="alert-close">&#10540;</span>
+          </div>
+          <h4>2. Alerts with border</h4>
+          <div class="alert alert-bordered prim-c ">
+            <span>&#8505;</span>
+            <p>This is a bordered Alert!</p>
+            <span class="alert-close">&#10540;</span>
+          </div>
+          <div class="alert alert-bordered sec-c">
+            <span>&#8505;</span>
+            <p>This is a primary Alert!</p>
+            <span class="alert-close">&#10540;</span>
+          </div> --></code></pre>
+
+
+
+
+        <h3 id="doc-avatar" class="mg-t-l">AVATAR</h3>
+        <p>To use this avatar just use class name avatar and also add class according to size - l , m , s , xs, img-round class will make it into a round avatar by default avatars are square. You can copy html part from below code snippet.</p>
+        <hr class="prim-c">
+
+        <h4>1. Round Avatar</h4>
+        <div class="container">
+          <img class="avatar xs img-round" src="/css/media/avatar-cat.png">
+          <img class="avatar s img-round" src="/css/media/avatar-cat.png">
+          <img class="avatar m img-round" src="/css/media/avatar-cat.png">
+          <img class="avatar l img-round" src="/css/media/avatar-cat.png">
+        </div>
+
+        <h4>1. Squared Avatar</h4>
+
+        <div class="container">
+          <img class="avatar xs" src="/css/media/avatar-cat.png">
+          <img class="avatar s" src="/css/media/avatar-cat.png">
+          <img class="avatar m" src="/css/media/avatar-cat.png">
+          <img class="avatar l" src="/css/media/avatar-cat.png">
+        </div>
+
+        <pre class="language-markup code-snippet"><code><!--<h4>1. Round Avatar</h4>
+        <div class="container">
+          <img class="avatar xs img-round" src="/css/media/avatar-cat.png">
+          <img class="avatar s img-round" src="/css/media/avatar-cat.png">
+          <img class="avatar m img-round" src="/css/media/avatar-cat.png">
+          <img class="avatar l img-round" src="/css/media/avatar-cat.png">
+        </div>
+
+        <h4>1. Squared Avatar</h4>
+        <div class="container">
+          <img class="avatar xs" src="/css/media/avatar-cat.png">
+          <img class="avatar s" src="/css/media/avatar-cat.png">
+          <img class="avatar m" src="/css/media/avatar-cat.png">
+          <img class="avatar l" src="/css/media/avatar-cat.png">
+        </div> --></code></pre>
+
+
+
+        <h3 id="doc-badge">BADGE</h3>
+        <p>Badges are being used to display a notification count or status information. badge and also add color classes according to your needs. There are different sizes - xs, s, m ,l etc. You can use the part from below code snippet </p>
+        <hr class="prim-c">
+
+        <h4>1. Simple badge</h4>
+        <div class="container">
+          <div class="badge prim xs"></div>
+          <div class="badge sec s"></div>
+          <div class="badge prim m"></div>
+          <div class="badge sec l"></div>
+        </div>
+
+
+        <h4>2. Badge with text</h4>
+        <div class="container">
+          <div class="badge prim">9</div>
+          <div class="badge prim l">99+</div>
+          <div class="badge badge-text prim">Badge</div>
+          <div class="badge badge-text sec">Badge</div>
+        </div>
+
+        <h4>3. Badge with icon</h4>
+        <div class="container">
+          <div class="badge-cont">
+            <div class="badge prim">9</div>
+            <div class="badge-icon"> <i class='fas fa-shopping-cart fa-2x'></i>
+            </div>
+          </div>
+
+          <div class="badge-cont">
+            <div class="badge sec">9</div>
+            <div class="badge-icon"> <i class='fas fa-envelope fa-2x'></i>
+            </div>
+          </div>
+
+          <div class="badge-cont">
+            <div class="badge sec">9</div>
+            <div class="badge-icon prim-c"> <i class='fas fa-comment fa-2x'></i>
+            </div>
+          </div>
+        </div>
+
+
+        <h4>4. Badge with Avatar</h4>
+        <div class="container">
+          <div class="badge-cont">
+            <div class="badge sec"></div>
+            <div class="badge-ava"> <img class="avatar xs img-round" src="/css/media/avatar-cat.png">
+            </div>
+          </div>
+
+          <div class="badge-cont">
+            <div class="badge sec"></div>
+            <div class="badge-ava"><img class="avatar s img-round" src="/css/media/avatar-cat.png">
+            </div>
+          </div>
+
+          <div class="badge-cont">
+            <div class="badge sec"></div>
+            <div class="badge-ava"><img class="avatar m img-round" src="/css/media/avatar-cat.png">
+            </div>
+          </div>
+
+          <div class="badge-cont">
+            <div class="badge sec"></div>
+            <div class="badge-ava"><img class="avatar l img-round" src="/css/media/avatar-cat.png">
+            </div>
+          </div>
+        </div>
+
+        <pre class="language-markup code-snippet"><code><!-- <h4>1. Simple badge</h4>
+        <div class="container">
+          <div class="badge prim xs"></div>
+          <div class="badge sec s"></div>
+          <div class="badge prim m"></div>
+          <div class="badge sec l"></div>
+        </div>
+
+        <h4>2. Badge with text</h4>
+        <div class="container">
+          <div class="badge prim">9</div>
+          <div class="badge prim l">99+</div>
+          <div class="badge badge-text prim">Badge</div>
+          <div class="badge badge-text sec">Badge</div>
+        </div>
+
+        <h4>3. Badge with icon</h4>
+        <div class="container">
+          <div class="badge-cont">
+            <div class="badge prim">9</div>
+            <div class="badge-icon"> <i class='fas fa-shopping-cart fa-2x'></i>
+            </div>
+          </div>
+          <div class="badge-cont">
+            <div class="badge sec">9</div>
+            <div class="badge-icon"> <i class='fas fa-envelope fa-2x'></i>
+            </div>
+          </div>
+          <div class="badge-cont">
+            <div class="badge sec">9</div>
+            <div class="badge-icon prim-c"> <i class='fas fa-comment fa-2x'></i>
+            </div>
+          </div>
+        </div>
+
+
+        <h4>4. Badge with Avatar</h4>
+        <div class="container">
+          <div class="badge-cont">
+            <div class="badge sec"></div>
+            <div class="badge-ava"> <img class="avatar xs img-round" src="/css/media/avatar-cat.png">
+            </div>
+          </div>
+          <div class="badge-cont">
+            <div class="badge sec"></div>
+            <div class="badge-ava"><img class="avatar s img-round" src="/css/media/avatar-cat.png">
+            </div>
+          </div>
+          <div class="badge-cont">
+            <div class="badge sec"></div>
+            <div class="badge-ava"><img class="avatar m img-round" src="/css/media/avatar-cat.png">
+            </div>
+          </div>
+          <div class="badge-cont">
+            <div class="badge sec"></div>
+            <div class="badge-ava"><img class="avatar l img-round" src="/css/media/avatar-cat.png">
+            </div>
+          </div>
+        </div>--></code></pre>
+
+
+
+        <h3 id="doc-card">Card</h3>
+        <p>Cards provide a flexible and extensible content container with multiple variants and options. Just add card and some respective classes, and you are good to go.</p>
+        <hr class='prim-c'>
+
+        <h4>1. Text Cards</h4>
+        <div class="container">
+
+          <div class="card card-shadow w-s">
+            <div class="card-content stacked">
+              <h4>Heading card</h4>
+              <hr class='sec-c'>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Utenim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                Utenim ad minim veniam, quis minim veniam, quis minim veniam, quis
+              </p>
+              <div class='card-content inline'>
+                <span class='badge badge-text prim'>Bagde</span>
+                <span class='badge badge-text sec'>Badge</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-shadow w-l">
+            <div class="card-content inline">
+              <img class='background' src="https://picsum.photos/id/1043/200/300" alt="picture">
+              <div class="card-content stacked">
+                <h4>Heading card</h4>
+                <hr class='sec-c'>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  sunt in culpa.</p>
+                <div class='card-content inline'>
+                  <span class='badge badge-text prim'>Bagde</span>
+                  <span class='badge badge-text sec'>Badge</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <h4>3. Background Image Cards</h4>
+        <div class="container">
+
+          <div class="card card-shadow w-s">
+            <img class='background' src="https://picsum.photos/id/1043/300/350" alt="picture">
+            <div class="card-content stacked">
+              <div class="card-content-head">
+                <h4 class="white-trans-bg">Heading</h4>
+                <span class='card-icon right'>&#10540;</span>
+              </div>
+              <div class='card-content-foot inline'>
+                <span class='badge badge-text prim'>Bagde</span>
+                <span class='badge badge-text sec'>Badge</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-shadow w-m">
+            <img class='background' src="https://picsum.photos/id/1043/350/350" alt="picture">
+            <div class="card-content stacked">
+              <div class="card-content-head">
+                <h4 class="white-trans-bg">Heading</h4>
+                <span class='card-icon right'>&#10540;</span>
+              </div>
+              <div class="card-content-body fl-space">
+                <i class="fas fa-angle-double-left card-icon-bg-round white-trans-bg f-m"></i>
+                <i class="fas fa-angle-double-right card-icon-bg-round white-trans-bg f-m"></i>
+              </div>
+              <div class='card-content-foot inline fl-end'>
+                <button class='btn prim'>Button1</button>
+                <button class='btn sec'>Button2</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <pre class="language-markup code-snippet"><code><!-- <h4>1. Text Cards</h4>
+          <div class='container'>
+            <div class="card card-shadow w-s">
+              <div class="card-content stacked">
+                <h4>Heading card</h4>
+                <hr class='sec-c'>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Utenim ad minim veniam, quis nostrud exercitation ullamco laboris
+                  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  Utenim ad minim veniam, quis minim veniam, quis minim veniam, quis
+                </p>
+                <div class='card-content inline'>
+                  <span class='badge badge-text prim'>Bagde</span>
+                  <span class='badge badge-text sec'>Badge</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card card-shadow w-l">
+              <div class="card-content inline">
+                <img class='background' src="https://picsum.photos/id/1043/200/300" alt="picture">
+                <div class="card-content stacked">
+                  <h4>Heading card</h4>
+                  <hr class='sec-c'>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    sunt in culpa.</p>
+                  <div class='card-content inline'>
+                    <span class='badge badge-text prim'>Bagde</span>
+                    <span class='badge badge-text sec'>Badge</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4>3. Background Image Cards</h4>
+          <div class="container">
+            <div class="card card-shadow w-s">
+              <img class='background' src="https://picsum.photos/id/1043/300/350" alt="picture">
+              <div class="card-content stacked">
+                <div class="card-content-head">
+                  <h4 class="white-trans-bg">Heading</h4>
+                  <span class='card-icon right'>&#10540;</span>
+                </div>
+                <div class='card-content-foot inline'>
+                  <span class='badge badge-text prim'>Bagde</span>
+                  <span class='badge badge-text sec'>Badge</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card card-shadow w-m">
+              <img class='background' src="https://picsum.photos/id/1043/350/350" alt="picture">
+              <div class="card-content stacked">
+                <div class="card-content-head">
+                  <h4 class="white-trans-bg">Heading</h4>
+                  <span class='card-icon right'>&#10540;</span>
+                </div>
+                <div class="card-content-body fl-space">
+                  <i class="fas fa-angle-double-left card-icon-bg-round white-trans-bg f-m"></i>
+                  <i class="fas fa-angle-double-right card-icon-bg-round white-trans-bg f-m"></i>
+                </div>
+                <div class='card-content-foot inline fl-end'>
+                  <button class='btn prim'>Button1</button>
+                  <button class='btn sec'>Button2</button>
+                </div>
+              </div>
+            </div>
+          </div> --></code></pre>
+
+
+
+        <h3 id="doc-button">BUTTON</h3>
+        <p>Buttons are also called as call to action. We have range of buttons and their states. You may use a tag or button element and with that use the class btn, you need to add respective classes, and you are good to go.</p>
+        <hr class="prim-c">
+        <div class="container">
+          <button type="button" class='btn prim'>Button</button>
+          <button type="button" class='btn sec'>Button</button>
+          <button type="button" class='btn btn-dis'>Disabled</button>
+          <button type="button" class='btn btn-bordered prim-c'>Button</button>
+          <button type="button" class='btn btn-bordered sec-c'>Button</button>
+          <button type="button" class='btn prim'>
+            <i class='fas fa-fast-forward'></i> Button
+          </button>
+          <button type="button" class='btn btn-bordered sec'>
+            <i class='fas fa-fast-forward'></i> Button
+          </button>
+          <button type="button" class='btn btn-float prim'>
+            <i class='fas fa-fast-forward'></i>
+          </button>
+          <button type="button" class='btn btn-float btn-bordered prim-c'>
+            <i class='fas fa-fast-forward'></i>
+          </button>
+        </div>
+
+          <pre class="language-markup code-snippet">
+            <code><!-- <button type="button" class='btn prim'>Button</button>
+              <button type="button" class='btn sec'>Button</button>
+              <button type="button" class='btn btn-dis'>Disabled</button>
+              <button type="button" class='btn btn-bordered prim-c'>Button</button>
+              <button type="button" class='btn btn-bordered sec-c'>Button</button>
+              <button type="button" class='btn prim'>
+                <i class='fas fa-fast-forward'></i> Button
+              </button>
+              <button type="button" class='btn btn-bordered sec'>
+                <i class='fas fa-fast-forward'></i> Button
+              </button>
+              <button type="button" class='btn btn-float prim'>
+                <i class='fas fa-fast-forward'></i>
+              </button>
+              <button type="button" class='btn btn-float btn-bordered prim-c'>
+                <i class='fas fa-fast-forward'></i>
+              </button>
+            --></code></pre>
+
+
+
+        <h3 id="doc-input">Input Elements</h3>
+        <p>Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects.</p>
+        <hr class="prim-c">
+
+        <div class="container">
+          <div class="input-container">
+            <input placeholder=" " class="input">
+            <label class="input-label ">Basic Input</label>
+          </div>
+          <div class="input-container prim-c">
+            <input placeholder=" " class="input prim-c">
+            <label class="input-label ">Primary Input</label>
+          </div>
+          <div class="input-container">
+            <input placeholder=" " class="input input-error red-c">
+            <i class='input-error-icon red-c'></i>
+            <label class="input-label">Error Input</label>
+          </div>
+          <div class="input-container">
+            <input placeholder=" " class="input green-c">
+            <i class='fas fa-check green-c'></i>
+            <label class="input-label">Correct Input</label>
+          </div>
+
+        </div>
+
+        <div class="input-container sec-c">
+          <input placeholder=" " class="input w-full">
+          <label class="input-label ">Full Width Input</label>
+        </div>
+
+        <div class="container">
+          <div class="input-container">
+            <textarea class="input-txtarea w-m h-s"></textarea>
+            <label class="input-label-txtarea">Text area</label>
+          </div>
+          <div class="input-container">
+            <textarea class="input-txtarea input-txtarea-no-resize w-l h-s"></textarea>
+            <label class="input-label-txtarea">Text area</label>
+          </div>
+        </div>
+
+          <pre class="language-markup code-snippet"><code><!-- <div class="input-container">
+              <input placeholder=" " class="input">
+              <label class="input-label ">Basic Input</label>
+            </div>
+            <div class="input-container prim-c">
+              <input placeholder=" " class="input prim-c">
+              <label class="input-label ">Primary Input</label>
+            </div>
+            <div class="input-container">
+              <input placeholder=" " class="input input-error red-c">
+              <i class='input-error-icon red-c'></i>
+              <label class="input-label">Error Input</label>
+            </div>
+          </div>
+          <div class="input-container">
+            <input placeholder=" " class="input green-c">
+            <i class='fas fa-check green-c'></i>
+            <label class="input-label">Correct Input</label>
+          </div>
+
+          <div class="input-container sec-c">
+            <input placeholder=" " class="input w-full">
+            <label class="input-label ">Full Width Input</label>
+          </div>
+
+          <div class="container">
+            <div class="input-container">
+              <textarea class="input-txtarea w-m h-s"></textarea>
+              <label class="input-label-txtarea">Text area</label>
+            </div>
+            <div class="input-container">
+              <textarea class="input-txtarea input-txtarea-no-resize w-l h-s"></textarea>
+              <label class="input-label-txtarea">Text area</label>
+            </div> --></code></pre>
+
+
+
+        <h3 id="doc-text">Text Utility</h3>
+        <p>Check out below text utilities.For heading u can use h1, h2, h3, h4, h5, h6 elements. You can use font weights fw-li, fw-reg, fw-med, fw-b, fw-bb and for font size use f-xs, f-s, f-m, f-l, f-xl, f-xxl You can add one of these classes to style the text.</p>
+        <hr class="prim-c">
+        <div class="container">
+          <div class="container-col">
+            <h3>Headings</h3>
+            <h1>Lorem Ipsum</h1>
+            <h2>Lorem Ipsum</h2>
+            <h3>Lorem Ipsum</h3>
+            <h4>Lorem Ipsum</h4>
+            <h5>Lorem Ipsum</h5>
+            <h6>Lorem Ipsum</h6>
+          </div>
+
+          <div class="container-col">
+            <h3 class="f-center">Center Text</h3>
+            <p class="f-xxl f-center">Lorem Ipsum</p>
+            <p class="f-xl f-center">Lorem Ipsum</p>
+            <p class="f-l f-center">Lorem Ipsum</p>
+            <p class="f-m f-center">Lorem Ipsum</p>
+            <p class="f-s f-center">Lorem Ipsum</p>
+            <p class="f-xs f-center">Lorem Ipsum</p>
+          </div>
+
+          <div class="container-col">
+            <h3>Font Weights</h3>
+            <p class="f-xxl fw-bb">Lorem Ipsum</p>
+            <p class="f-xl fw-b">Lorem Ipsum</p>
+            <p class="f-l fw-med">Lorem Ipsum</p>
+            <p class="f-m fw-reg">Lorem Ipsum</p>
+            <p class="f-s fw-li">Lorem Ipsum</p>
+            <p class="f-xs">Lorem Ipsum</p>
+          </div>
+        </div>
+
+        <pre class="language-markup code-snippet"><code><!-- <div class="container-col">
+          <h3>Headings</h3>
+          <h1>Lorem Ipsum</h1>
+          <h2>Lorem Ipsum</h2>
+          <h3>Lorem Ipsum</h3>
+          <h4>Lorem Ipsum</h4>
+          <h5>Lorem Ipsum</h5>
+          <h6>Lorem Ipsum</h6>
+        </div>
+
+        <div class="container-col">
+          <h3 class="f-center">Text</h3>
+          <p class="f-xxl f-center">Lorem Ipsum</p>
+          <p class="f-xl f-center">Lorem Ipsum</p>
+          <p class="f-l f-center">Lorem Ipsum</p>
+          <p class="f-m f-center">Lorem Ipsum</p>
+          <p class="f-s f-center">Lorem Ipsum</p>
+          <p class="f-xs f-center">Lorem Ipsum</p>
+        </div>
+
+        <div class="container-col">
+          <h3>Font Weights</h3>
+          <p class="f-xxl fw-bb">Lorem Ipsum</p>
+          <p class="f-xl fw-b">Lorem Ipsum</p>
+          <p class="f-l fw-med">Lorem Ipsum</p>
+          <p class="f-m fw-reg">Lorem Ipsum</p>
+          <p class="f-s fw-li">Lorem Ipsum</p>
+          <p class="f-xs">Lorem Ipsum</p>
+        </div>
+      </div> --></code></pre>
+
+
+
+        <h2 id="doc-list">Lists</h2>
+        <p>Lists are used everywhere, navigation bar, stacked notifications, article pages, etc. list-inline makes horizontally aligned lists and list-stacked maked vertically aligned lists</p>
+        <hr class="prim-c">
+
+        <h3>1.List Inline</h3>
+        <div class="container">
+          <ul class="list-container list-inline prim">
+            <li>
+              <i class="fa-regular fa-address-book"></i>
+              Item 1
+            </li>
+            <li>
+              <i class="fa-regular fa-address-book"></i>
+              Item 2
+            </li>
+            <li>
+              <i class="fa-regular fa-address-book"></i>
+              Item 3
+            </li>
+            <li>
+              <i class="fa-regular fa-address-book"></i>
+              Item 4
+            </li>
+          </ul>
+
+          <ul class="list-container list-inline sec">
+            <li>
+              <i class="fa-regular fa-address-book"></i>
+              Item 1
+            </li>
+            <li>
+              <i class="fa-regular fa-address-book"></i>
+              Item 2
+            </li>
+            <li>
+              <i class="fa-regular fa-address-book"></i>
+              Item 3
+            </li>
+            <li>
+              <i class="fa-regular fa-address-book"></i>
+              Item 4
+            </li>
+          </ul>
+        </div>
+
+        <h3>1.List Stacked</h3>
+        <ul class="list-container list-stacked sec">
+          <li>
+            <i class="fa-regular fa-address-book"></i>
+            Item 1
+            <i class="list-icon-end fa-regular fa-trash-can"></i>
+          </li>
+          <li>
+            <i class="fa-regular fa-address-book"></i>
+            Item 2
+            <i class="list-icon-end fa-regular fa-trash-can"></i>
+          </li>
+          <li>
+            <i class="fa-regular fa-address-book"></i>
+            Item 3
+            <i class="list-icon-end fa-regular fa-trash-can"></i>
+          </li>
+          <li>
+            <i class="fa-regular fa-address-book"></i>
+            Item 4
+            <i class="list-icon-end fa-regular fa-trash-can"></i>
+          </li>
         </ul>
 
-      </section>
+        <pre class="language-markup code-snippet"><code><!-- <h3>1.List Inline</h3>
+          <div class="container">
+            <ul class="list-container list-inline prim">
+              <li>
+                <i class="fa-regular fa-address-book"></i>
+                Item 1
+              </li>
+              <li>
+                <i class="fa-regular fa-address-book"></i>
+                Item 2
+              </li>
+              <li>
+                <i class="fa-regular fa-address-book"></i>
+                Item 3
+              </li>
+              <li>
+                <i class="fa-regular fa-address-book"></i>
+                Item 4
+              </li>
+            </ul>
 
-      <section class="grid-layout-main">
-        
-      </section>
+            <ul class="list-container list-inline sec">
+              <li>
+                <i class="fa-regular fa-address-book"></i>
+                Item 1
+              </li>
+              <li>
+                <i class="fa-regular fa-address-book"></i>
+                Item 2
+              </li>
+              <li>
+                <i class="fa-regular fa-address-book"></i>
+                Item 3
+              </li>
+              <li>
+                <i class="fa-regular fa-address-book"></i>
+                Item 4
+              </li>
+            </ul>
+          </div>
+
+          <h3>1.List Stacked</h3>
+          <ul class="list-container list-stacked sec">
+            <li>
+              <i class="fa-regular fa-address-book"></i>
+              Item 1
+              <i class="list-icon-end fa-regular fa-trash-can"></i>
+            </li>
+            <li>
+              <i class="fa-regular fa-address-book"></i>
+              Item 2
+              <i class="list-icon-end fa-regular fa-trash-can"></i>
+            </li>
+            <li>
+              <i class="fa-regular fa-address-book"></i>
+              Item 3
+              <i class="list-icon-end fa-regular fa-trash-can"></i>
+            </li>
+            <li>
+              <i class="fa-regular fa-address-book"></i>
+              Item 4
+              <i class="list-icon-end fa-regular fa-trash-can"></i>
+            </li>
+          </ul> --></code></pre>
 
 
-      <footer class="grid-layout-footer page-footer">
-        <div>
-          <p>made with <span class="fas fa-heart prim-c"></span> by Ritika Awasthy</p>
+
+        <h2 id="doc-image">Image</h2>
+        <p>Images are made responsive with img-responsive, img-square-round makes square images rounded and img-landscape-round makes landscape images round. Sizing of all images could be set by using img-s, img-m, img-l.</p>
+        <hr class="prim-c">
+        <div class="container-col">
+
+          <h3>1. Round Images</h3>
+          <div class="container">
+            <div>
+              <img class="img-square-round img-s" src="https://picsum.photos/id/1043/500/500" alt="">
+            </div>
+            <div class="img-landscape-round img-m">
+              <img src="https://picsum.photos/id/1043/500/500" alt="">
+            </div>
+          </div>
+
+          <h3>2.Responsive Images</h3>
+          <div class="container">
+            <div>
+              <img class="img-responsive img-s" src="https://picsum.photos/id/1043/900/500" alt="">
+            </div>
+            <div>
+              <img class="img-responsive img-m" src="https://picsum.photos/id/1043/900/500" alt="">
+            </div>
+            <div>
+              <img class="img-responsive img-l" src="https://picsum.photos/id/1043/900/500" alt="">
+            </div>
+          </div>
         </div>
 
-        <div class="inline-section">
-          <a href="https://github.com/ritikaawasthy" class="fa-brands fa-github f-m"></a>
-          <a href="https://twitter.com/Ritikaawasthy" class="fa-brands fa-twitter f-m"></a>
-          <a href="https://www.linkedin.com/in/ritika-awasthy/" class="fa-brands fa-linkedin f-m"></a>
+        <pre class="language-markup code-snippet"><code><!-- <h3>1. Round Images</h3>
+          <div class="container">
+            <div>
+              <img class="img-square-round img-s" src="https://picsum.photos/id/1043/500/500" alt="">
+            </div>
+            <div class="img-landscape-round img-m">
+              <img src="https://picsum.photos/id/1043/500/500" alt="">
+            </div>
+          </div>
+
+          <h3>2.Responsive Images</h3>
+          <div class="container">
+            <div>
+              <img class="img-responsive img-s" src="https://picsum.photos/id/1043/900/500" alt="">
+            </div>
+            <div>
+              <img class="img-responsive img-m" src="https://picsum.photos/id/1043/900/500" alt="">
+            </div>
+            <div>
+              <img class="img-responsive img-l" src="https://picsum.photos/id/1043/900/500" alt="">
+            </div>
+          </div>
+        </div> --></code></pre>
+
+
+
+
+        <h2 id="doc-nav">Navigation</h2>
+        <p>Navigation bar is used to navigate through the web apps or websites. This navigation component is responsive.</p>
+        <hr class='prim-c'>
+        <section class='container-col'>
+          <nav class="nav prim-li">
+            <img class="avatar xs img-round start" src="/css/media/avatar-cat.png">
+            <ul class="list list-inline f-m sec-c">
+              <li class='active'>Home</li>
+              <li>Tab 1</li>
+              <li>Tab 2</li>
+              <li>Tab 3</li>
+              <li>Tab 4</li>
+            </ul>
+          </nav>
+        </section>
+
+        <pre class="language-markup code-snippet"><code><!-- <nav class="nav prim-li">
+            <img class="avatar xs img-round start" src="/css/media/avatar-cat.png">
+            <ul class="list list-inline f-m sec-c">
+              <li class='active'>Home</li>
+              <li>Tab 1</li>
+              <li>Tab 2</li>
+              <li>Tab 3</li>
+              <li>Tab 4</li>
+            </ul>
+          </nav> --></code></pre>
+
+
+
+        <h2 id="doc-rate">Star Rating</h2>
+        <p>Rating components can be used as read-only or as interactive just as id to rating-id to make is interactive</p>
+        <hr class='prim-c'>
+        <div class="container">
+          <div id="rating-id" class="rating-container prim-c">
+            <span id="rating-first" title="5">☆</span>
+            <span id="rating-second" title="4">☆</span>
+            <span id="rating-third" title="3">☆</span>
+            <span id="rating-fourth" title="2">☆</span>
+            <span id="rating-fifth" title="1">☆</span>
+          </div>
+
+          <div class="rating-container prim-c">
+            <span id="rating-first" title="5">☆</span>
+            <span id="rating-second" title="4">☆</span>
+            <span id="rating-third" title="3">☆</span>
+            <span id="rating-fourth" class="checked" title="2">☆</span>
+            <span id="rating-fifth" title="1">☆</span>
+          </div>
+
+          <div class="rating-container prim-c">
+            <span id="rating-first" title="5">☆</span>
+            <span id="rating-second" title="4">☆</span>
+            <span id="rating-third" class="checked" title="3">☆</span>
+            <span id="rating-fourth" title="2">☆</span>
+            <span id="rating-fifth" title="1">☆</span>
+          </div>
+
+          <div class="rating-container prim-c">
+            <span id="rating-first" title="5">☆</span>
+            <span id="rating-second" class="checked" title="4">☆</span>
+            <span id="rating-third" title="3">☆</span>
+            <span id="rating-fourth" title="2">☆</span>
+            <span id="rating-fifth" title="1">☆</span>
+          </div>
+
+          <div class="rating-container prim-c">
+            <span id="rating-first" class="checked" title="5">☆</span>
+            <span id="rating-second" title="4">☆</span>
+            <span id="rating-third" title="3">☆</span>
+            <span id="rating-fourth" title="2">☆</span>
+            <span id="rating-fifth" title="1">☆</span>
+          </div>
         </div>
+
+        <pre class="language-markup code-snippet"><code><!-- <div class="container">
+            <div id="rating-id" class="rating-container prim-c">
+              <span id="rating-first" title="5">☆</span>
+              <span id="rating-second" title="4">☆</span>
+              <span id="rating-third" title="3">☆</span>
+              <span id="rating-fourth" title="2">☆</span>
+              <span id="rating-fifth" title="1">☆</span>
+            </div>
+
+            <div class="rating-container prim-c">
+              <span id="rating-first" title="5">☆</span>
+              <span id="rating-second" title="4">☆</span>
+              <span id="rating-third" title="3">☆</span>
+              <span id="rating-fourth" class="checked" title="2">☆</span>
+              <span id="rating-fifth" title="1">☆</span>
+            </div>
+
+            <div class="rating-container prim-c">
+              <span id="rating-first" title="5">☆</span>
+              <span id="rating-second" title="4">☆</span>
+              <span id="rating-third" class="checked" title="3">☆</span>
+              <span id="rating-fourth" title="2">☆</span>
+              <span id="rating-fifth" title="1">☆</span>
+            </div>
+
+            <div class="rating-container prim-c">
+              <span id="rating-first" title="5">☆</span>
+              <span id="rating-second" class="checked" title="4">☆</span>
+              <span id="rating-third" title="3">☆</span>
+              <span id="rating-fourth" title="2">☆</span>
+              <span id="rating-fifth" title="1">☆</span>
+            </div>
+
+            <div class="rating-container prim-c">
+              <span id="rating-first" class="checked" title="5">☆</span>
+              <span id="rating-second" title="4">☆</span>
+              <span id="rating-third" title="3">☆</span>
+              <span id="rating-fourth" title="2">☆</span>
+              <span id="rating-fifth" title="1">☆</span>
+            </div>
+          </div> --></code></pre>
+
+
+
+        <h2 id="doc-modal">Modal</h2>
+        <p>Modals are positioned over everything else in the document and remove scroll from the page. It gets closed only with close button on modal pop-up. If not inside a binding container it would sit on top of the screen</p>
+        <hr class='prim-c'>
+        <div class="container">
+          <a id="modal-open-btn" class="btn prim">Open</a>
+        </div>
+
+        <div class="modal-container">
+          <div class="modal card card-shadow w-xl prim">
+            <div class="card-content stacked">
+              <div class="card-content-head">
+                <h2>This is modal</h2>
+                <i id="modal-close-btn" class="fas fa-close card-icon round right"></i>
+              </div>
+              <div class="card-content-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                  minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit e
+                  sse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <div class="card-content inline">
+                  <a class="btn btn-bordered prim">Button</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <pre class="language-markup code-snippet"><code><!-- <a id="modal-open-btn" class="btn prim">Open</a>
+          </div>
+          <div class="modal-container">
+            <div class="modal card card-shadow w-xl prim">
+              <div class="card-content stacked">
+                <div class="card-content-head">
+                  <h2>This is modal</h2>
+                  <i id="modal-close-btn" class="fas fa-close card-icon round right"></i>
+                </div>
+                <div class="card-content-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit e
+                    sse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                  <div class="card-content inline">
+                    <a class="btn btn-bordered prim">Button</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>--></code></pre>
+
+
+        <h2 id="doc-snackbar">Snackbar</h2>
+        <p>This component can be used for toast or snackbar component. Toast is mostly used to show feedback message. Snackbar is to used show message that need user action</p>
+        <hr class='prim-c'>
+        <section class="container">
+          <a class="btn prim snackbar-trigger">Open snackbar</a>
+        </section>
+        <div class="snackbar hide">
+          <div class="snackbar-body">
+            <p>
+              This is a snack bar
+            </p>
+            <i class="fw-reg end">undo</i>
+          </div>
+        </div>
+
+        <pre class="language-markup code-snippet"><code><!-- <section class="container">
+            <a class="btn prim snackbar-trigger">Open snackbar</a>
+          </section>
+          <div class="snackbar hide">
+            <div class="snackbar-body">
+              <p>
+                This is a snack bar
+              </p>
+              <i class="fw-reg end">undo</i>
+            </div>
+          </div> --></code></pre>
+
+
+        <h3 id="doc-grid">Grids</h3>
+        <p>Use grid when you want sections in view. Check below some examples of side by side cards. This one is of (50:50)</p>
+        <hr class='prim-c'>
+        <h4>1. Two section grid </h4>
+        <section class="grid-two-layout-container">
+          <article class="grid-two-layout-left palesilver-li end">
+            <div class="card ">
+              <div class="card-content stacked">
+                <h4>Heading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="grid-two-layout-right">
+            <div class="card">
+              <div class="background">
+                <img src="https://picsum.photos/id/1043/550/250" alt="">
+              </div>
+              <div class="card-content stacked">
+                <h4>Heading</h4>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <pre class="language-markup code-snippet"><code><!-- <section class="grid-two-layout-container">
+            <article class="grid-two-layout-left palesilver-li end">
+              <div class="card ">
+                <div class="card-content stacked">
+                  <h4>Heading</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="grid-two-layout-right">
+              <div class="card">
+                <div class="background">
+                  <img src="https://picsum.photos/id/1043/550/250" alt="">
+                </div>
+                <div class="card-content stacked">
+                  <h4>Heading</h4>
+                </div>
+              </div>
+            </article>
+          </section> --></code></pre>
+
+        <h4>1. Three section grid </h4>
+        <section class="grid-three-layout-container">
+          <article class="grid-three-layout-left palesilver-li">
+            <div class="card">
+              <div class="card-content stacked">
+                <h4>Heading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article class="grid-three-layout-center">
+            <div class="card">
+              <div class="background">
+                <img src="https://picsum.photos/id/1043/850/450" alt="">
+              </div>
+              <div class="card-content stacked">
+                <h4>Heading</h4>
+              </div>
+            </div>
+          </article>
+          <article class="grid-three-layout-right palesilver-li">
+            <div class="card">
+              <div class="card-content stacked">
+                <h4>Heading</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+
+    <pre class="language-markup code-snippet"><code><!-- <section class="grid-three-layout-container">
+        <article class="grid-three-layout-left palesilver-li">
+          <div class="card">
+            <div class="card-content stacked">
+              <h4>Heading</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="grid-three-layout-center">
+          <div class="card">
+            <div class="background">
+              <img src="https://picsum.photos/id/1043/850/450" alt="">
+            </div>
+            <div class="card-content stacked">
+              <h4>Heading</h4>
+            </div>
+          </div>
+        </article>
+        <article class="grid-three-layout-right palesilver-li">
+          <div class="card">
+            <div class="card-content stacked">
+              <h4>Heading</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>--></code></pre>
+
+</article>
+</section>
+
+    <footer class="grid-layout-footer page-footer">
+      <div>
+        <p>made with <span class="fas fa-heart prim-c"></span> by Ritika Awasthy</p>
+      </div>
+      <!-- MODAL  -->
+      <div class="inline-section">
+        <a href="https://github.com/ritikaawasthy" class="fa-brands fa-github f-m"></a>
+        <a href="https://twitter.com/Ritikaawasthy" class="fa-brands fa-twitter f-m"></a>
+        <a href="https://www.linkedin.com/in/ritika-awasthy/" class="fa-brands fa-linkedin f-m"></a>
+      </div>
     </footer>
-    <script type="module" src="/js/main.js"></script>
-    <script type="" src="/js/docs.js"></script>
-  </body>
+
+  </section>
+
+
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/documentation/js/docs.js"></script>
+    <script type="text/javascript" src="/documentation/js/prism.js"></script>
+</body>
+
 </html>
