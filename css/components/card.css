@@ -72,11 +72,6 @@
   background-color: transparent;
 }
 
-.card-shadow-hover:hover{
-    box-shadow: 2px 2px 8px 4px lightgrey;
-    cursor: pointer;
-}
-
 .card-img-curve{
   border-radius: 0.5rem;
 }
